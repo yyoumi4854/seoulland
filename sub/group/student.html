@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>서울랜드 자연속 캐릭터 천국</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/student.css">
+    <script src="../../common/js/script.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="util">
+        <div class="inner">
+          <a href="#" class="btnMall">
+            <span>캐릭터 쇼핑몰</span>
+          </a>
+          <div class="utilTopMeun">
+            <div class="login">
+              <a href="../../login/login.html">로그인</a><a href="../../login/join01.html">회원가입</a>
+            </div>
+            <div class="lang">
+              <a href="#" class="btnLang"><span>KOR</span></a>
+              <ul class="langList">
+                <li><a href="#">KOR</a></li>
+                <li><a href="#">ENG</a></li>
+                <li><a href="#">JPN</a></li>
+                <li><a href="#">CHN</a></li>
+              </ul>
+            </div><!-- lang -->
+          </div><!-- utilTopMeun -->
+        </div>
+      </div><!-- util -->
+      <div class="headerTop">
+        <div class="inner">
+          <h1 class="logo"><a href="../../index.html"><img src="../../common/images/logo.png" alt="서울랜드 로고"></a></h1>
+          <a href="#"><span>예매</span></a>
+        </div>
+      </div><!-- headerTop -->
+      <nav id="gnbWrap">
+        <div class="inner">
+          <img src="../../common/images/btn_gnb_menu.png" alt="전체메뉴" class="allmenu">
+          <ul id="gnb">
+            <li>
+              <a href="#">즐길거리</a>
+              <ul class="dep2">
+                <li><a href="../enjoy/course.html">추천코스</a></li>
+                <li><a href="#">어트랙션</a></li>
+                <li>
+                  <a href="#">공연/전시</a>
+                  <ul class="dep3">
+                    <li><a href="#">공연</a></li>
+                    <li><a href="#">전시</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">페스티벌</a></li>
+                <li>
+                  <a href="#">먹을거리</a>
+                  <ul class="dep3">
+                    <li><a href="#">식사</a></li>
+                    <li><a href="#">스낵</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">요금&amp;할인혜택</a>
+              <ul class="dep2">
+                <li><a href="#">이용요금</a></li>
+                <li><a href="#">할인프로모션</a></li>
+                <li><a href="../price/card.html">제휴카드</a></li>
+                <li>
+                  <a href="#">연간회원</a>
+                  <ul class="dep3">
+                    <li><a href="#">서울랜드 연간회원</a></li>
+                    <li><a href="#">둘모아 연관회원</a></li>
+                    <li><a href="#">다모아 연간회원</a></li>
+                    <li><a href="#">연간회원 약관</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">이용가이드</a>
+              <ul class="dep2">
+                <li><a href="#">운영시간</a></li>
+                <li><a href="#">오시는길</a></li>
+                <li><a href="../guide/facility.html">편의시설</a></li>
+                <li><a href="#">가이드맵</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">단체 안내</a>
+              <ul class="dep2">
+                <li><a href="student.html">학생단체</a></li>
+                <li><a href="#">기업체행사</a></li>
+                <li><a href="#">외국인단체</a></li>
+                <li><a href="#">일반단체</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">고객서비스</a>
+              <ul class="dep2">
+                <li><a href="../customer/notice.html">공지사항</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li>
+                  <a href="#">고객소리함</a>
+                  <ul class="dep3">
+                    <li><a href="#">이용문의</a></li>
+                    <li><a href="#">칭찬/불편/건의</a></li>
+                    <li><a href="#">분실문 센터</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul><!-- gnb -->
+          <a href="#" class="scr"><img src="../../common/images/btn_gnb_scr.png" alt="검색"></a>
+          <div class="schArea">
+            <div class="inner">
+              <form>
+                <div class="inputArea">
+                  <input type="text" placeholder="검색어를 입력해주세요">
+                  <a href="#"><img src="../../common/images/btn_such_such.png" alt="검색확인"></a>
+                </div><!-- inputArea -->
+                <div class="schEx">
+                  <span>[ex]</span><span>어트랙션</span><span>티켓요금</span><span>페스티벌</span>
+                </div>
+                <button class="btnClose"><img src="../../common/images/btn_such_close.png" alt="검색창 닫기"></button>
+              </form>
+            </div>
+          </div><!-- schArea -->
+        </div><!-- inner -->
+      </nav><!-- gnbWrap -->
+      <div class="subMenuBg"></div>
+    </header>
+    <div id="container">
+      <div class="tit_bg">
+        <h2>단체 안내</h2>
+      </div>
+      <div class="inner">
+        <div class="sub_nav_wrap">
+          <ul class="sub_nav">
+            <li class="home"><a href="../../index.html">Home</a></li>
+            <li class="gnb1 sub_gnb">
+              <a href="#">단체 안내</a>
+              <ul class="sub_gnb1">
+                <li><a href="#">즐길거리</a></li>
+                <li><a href="#">요금&amp;할인혜택</a></li>
+                <li><a href="#">이용가이드</a></li>
+                <li><a href="#">고객서비스</a></li>
+              </ul>
+            </li>
+            <li class="gnb2 sub_gnb">
+              <a href="#">학생단체</a>
+              <ul class="sub_gnb1">
+                <li><a href="#">기업체행사</a></li>
+                <li><a href="#">외국인단체</a></li>
+                <li><a href="#">일반단체</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="sub_contents">
+          <h3>학생단체</h3>
+          <ul class="tab_menu">
+            <li class="on"><a href="#" data-tab="tab_con1">자연생태프로그램</a></li>
+            <li><a href="#" data-tab="tab_con2">예술활동 프로그램</a></li>
+            <li><a href="#" data-tab="tab_con3">진로탐색 프로그램</a></li>
+          </ul>
+          <div class="tab_con_wrap">
+            <div id="tab_con1" class="tab_con">
+              <ul>
+                <li>
+                  <img src="images/img_nature1.jpg" alt="화분가꾸기 프로그램">
+                  <div class="right">
+                    <p class="tit">화분가꾸기 프로그램(장미/카네이션/벌레잡이식물)</p>
+                    <p class="txt">
+                      <span>따뜻한 마음을 선물하는 감성체험</span><br>
+                      꽃과 흙을 만지며 오감을 활용하는 감각체험에 어린이 여러분을 초대합니다.
+                    </p>
+                    <div class="detail_txt">
+                      <p><span>체험시기</span><span>봄/가을(월~토요일까지 사전 예약제로 운영)</span></p>
+                      <p><span>처험대상</span><span>유아/초등</span></p>
+                      <p><span>참여인원</span><span>100명/회</span></p>
+                      <p><span>체험시간</span><span>약40분</span></p>
+                      <p><span>체험장소</span><span>서울랜드 프랭키 농장(유료체험)</span></p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <img src="images/img_nature2.jpg" alt="수확체험 프로그램">
+                  <div class="right">
+                    <p class="tit">수확체험 프로그램(고구마/알밤)</p>
+                    <p class="txt">
+                      <span>수학의 기쁨을 직접 체험하는</span><br>
+                      계절 특화 프로그램
+                    </p>
+                    <div class="detail_txt">
+                      <p><span>체험시기</span><span>봄/가을(월~토요일까지 사전 예약제로 운영)</span></p>
+                      <p><span>처험대상</span><span>유아/초등</span></p>
+                      <p><span>참여인원</span><span>100명/회</span></p>
+                      <p><span>체험시간</span><span>약40분</span></p>
+                      <p><span>체험장소</span><span>서울랜드 프랭키 농장(유료체험)</span></p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <img src="images/img_nature3.jpg" alt="서울동물원 동물생태 프로그램">
+                  <div class="right">
+                    <p class="tit">서울동물원 동물생태 프로그램</p>
+                    <p class="txt">
+                      <span>국내 최대의 자연생태 교실</span><br>
+                      서울대공원 동물원과 테마가든에서 경험하는 동·식물 현장 체험교실
+                    </p>
+                    <div class="detail_txt">
+                      <p><span>체험시기</span><span>상시(월~금요일까지 사전 예약제로 운영)</span></p>
+                      <p><span>처험대상</span><span>유아/초등/(유아,초등 저학년 가이드 지원)</span></p>
+                      <p><span>참여인원</span><span>제한 없음</span></p>
+                      <p><span>체험시간</span><span>약 100분</span></p>
+                      <p><span>체험장소</span><span>서울동물원, 테마가든</span></p>
+                    </div>
+                    <p class="plus">※ 서울랜드 패키지 프로그램으로 구성해 드립니다(체험학습교재 제공)</p>
+                  </div>
+                </li>
+                <li>
+                  <img src="images/img_nature4.jpg" alt="국립과천과학관 프로그램">
+                  <div class="right">
+                    <p class="tit">국립과천과학관 프로그램</p>
+                    <p class="txt">
+                      <span>기초과학관, 자연사관, 전통과학관, 첨단기술관등 테마별 전시관에서</span><br>
+                      과학의 원리를 직접 확인하고 체험할 수 있는 프로그램(서울랜드 패키지 프로그램)
+                    </p>
+                    <div class="detail_txt">
+                      <p><span>체험시기</span><span>상시(월~금요일까지 사전 예약제로 운영)</span></p>
+                      <p><span>처험대상</span><span>유아/초등/(유아,초등 저학년 가이드 지원)</span></p>
+                      <p><span>참여인원</span><span>제한 없음</span></p>
+                      <p><span>체험시간</span><span>약 100분</span></p>
+                      <p><span>체험장소</span><span>국립과천과학관</span></p>
+                    </div>
+                    <p class="plus">※ 서울랜드 패키지 프로그램으로 구성해 드립니다(체험학습교재 제공)</p>
+                  </div>
+                </li>
+              </ul>
+            </div><!-- tabCon1 -->
+            <div id="tab_con2" class="tab_con">
+              <ul>
+                <li>
+                  <img src="images/img_art1.jpg" alt="AR안전체험관">
+                  <div class="right">
+                    <p class="tit">AR안전체험관 '유후와 친구들'</p>
+                    <p class="txt">
+                      <span>"유후와 친구들 과" 함께 AR(증강현실)로 재미 있게 체험할 수 있는 이색 교육 공간</span><br>
+                      교통, 생활, 안전을 체험하는 등 재미와 교육 모두 잡을 수 있는 아이에게 꼭 필요한 디지털 안전체험관
+                    </p>
+                    <div class="detail_txt">
+                      <p><span>운영기간</span><span>상시(평일 사전 예약제로 운영)</span></p>
+                      <p><span>관람대상</span><span>유아/초등저학년</span></p>
+                      <p><span>체험시간</span><span>약40분</span></p>
+                      <p><span>체험장소</span><span>서울랜드 AR안전체험관(유료체험)</span></p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <img src="images/img_art2.jpg" alt="어린이 뮤지컬 "어린이 캣"">
+                  <div class="right">
+                    <p class="tit">어린이 뮤지컬 "어린이 캣"</p>
+                    <p class="txt">
+                      <span>세계 4대 뮤지컬중 하나인 캣츠가 서울랜드에 돌아왔다!</span><br>
+                      아이들의 눈높이에 맞게 재구성하여 재미와 교육을 한번에 잡은 어린이 문화 체험 프로그램!
+                    </p>
+                    <div class="detail_txt">
+                      <p><span>공연기간</span><span>봄(4월~6월 초), 가을(9월~11월 초)</span></p>
+                      <p><span>공연장소</span><span>서울랜드 통나무무대</span></p>
+                      <p><span>공연시간</span><span>40분</span></p>
+                      <p><span>공연요금</span><span>2,000원(파크이용원 별도)</span></p>
+                    </div>
+                    <p class="plus">※ 월~금요일까지 사전예약제로 운영</p>
+                  </div>
+                </li>
+                <li>
+                  <img src="images/img_art3.jpg" alt="국립현대미술관 과천관 MMCA하이라이트">
+                  <div class="right">
+                    <p class="tit">국립현대미술관 과천관 MMCA하이라이트</p>
+                    <p class="txt">
+                      <span>전시 감상 및 효율적인 관람 동선을 제공하기 위해 마련한 강의형 하이라이트 해설 프로그램</span><br>
+                      전시관람 전 국립현대미술관 소개 및 전시와 작품감상 방법에 대한 내용을 다룹니다.
+                    </p>
+                    <div class="detail_txt">
+                      <p><span>체험시기</span><span>상시(사전 예약제로 운영/국립현대미술관 과천관 홈페이지에서 직접 예약)</span></p>
+                      <p><span>처험대상</span><span>초등/청소년</span></p>
+                      <p><span>참여인원</span><span>50~350명</span></p>
+                      <p><span>체험시간</span><span>10:30~11:20</span></p>
+                      <p><span>체험장소</span><span>국립현대미술관 과천관(무료체험)</span></p>
+                    </div>
+                    <p class="plus">※ 서울랜드국립현대미술관 홈페이지에서 별도예약을 하시기 바랍니다.</p>
+                  </div>
+                </li>
+              </ul>
+            </div><!-- tabCon1 -->
+            <div id="tab_con3" class="tab_con">
+              <ul>
+                <li>
+                  <img src="images/img_job1.jpg" alt="진로콘서트">
+                  <div class="right">
+                    <p class="tit">진로콘서트(아웃사이더와 함께하는 힙합토크 페스티벌)</p>
+                    <p class="txt">
+                      <span>더 이상 따분한 진로강연이 아니다!!</span><br>
+                      거침없는 힙합정신처럼 진로고민을 나누는 진정한 힙톡(Hip-Talk)페스티벌
+                    </p>
+                    <div class="detail_txt">
+                      <p><span>체험시기</span><span>상시(월~금요일까지 사전 예약제로 운영)</span></p>
+                      <p><span>처험대상</span><span>청소년</span></p>
+                      <p><span>참여인원</span><span>800명/회</span></p>
+                      <p><span>체험시간</span><span>약 70분</span></p>
+                      <p><span>체험장소</span><span>서울랜드 이벤트홀(유로체험)</span></p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <img src="images/img_job2.jpg" alt="세프 아카데미">
+                  <div class="right">
+                    <p class="tit">세프 아카데미</p>
+                    <p class="txt">
+                      <span>세프 아카데미는 요리사 직업체험이자 청소년 모둠활동 최적화 프로그램</span><br>
+                      진짜 셰프로부터 배우는 떡갈비 스테이크 만들기 친구들과 요리도 만들고 식사끼지 해결
+                    </p>
+                    <div class="detail_txt">
+                      <p><span>체험시기</span><span>상시(월~금요일까지 사전 예약제로 운영)</span></p>
+                      <p><span>처험대상</span><span>초등/청소년</span></p>
+                      <p><span>참여인원</span><span>100명/회</span></p>
+                      <p><span>체험시간</span><span>약 90분</span></p>
+                      <p><span>체험장소</span><span>서울랜드 장미의언덕 1층(유로체험)</span></p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <img src="images/img_job3.jpg" alt="VR체험">
+                  <div class="right">
+                    <p class="tit">VR체험</p>
+                    <p class="txt">
+                      <span>VR의 원리를 배우고 제공하는 VR박스와 스마트폰을 이용하여 나만의 VR영상을 만들고 체험하자</span><br>
+                      VR박스는 집으로 가져가 가족, 친구들과 함꼐 가상현실 체험을 즐길 수 있습니다.
+                    </p>
+                    <div class="detail_txt">
+                      <p><span>체험시기</span><span>상시(월~금요일까지 사전 예약제로 운영)</span></p>
+                      <p><span>처험대상</span><span>청소년</span></p>
+                      <p><span>참여인원</span><span>600명/회</span></p>
+                      <p><span>체험시간</span><span>약 60분</span></p>
+                      <p><span>체험장소</span><span>서울랜드 VR체험장(유료체험)</span></p>
+                    </div>
+                    <div class="detail_tbl">
+                      <table>
+                        <colgroup>
+                          <col width="25%">
+                          <col width="50%">
+                          <col width="25%">
+                        </colgroup>
+                        <tr>
+                          <th>1부</th><td>VR영상 만들기 체험</td><td>30분</td>
+                        </tr>
+                        <tr>
+                          <th>2부</th><td>VR 놀이기구 이용</td><td>30분</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <img src="images/img_job4.jpg" alt="휴면라이브러리">
+                  <div class="right">
+                    <p class="tit">휴면라이브러리</p>
+                    <p class="txt">
+                      <span>다양한 직업군의 강사님들이 학생들에게 경험과 지식을 알려주는 소중한 강연의 시간</span><br>
+                      여러분들을 서울랜드 휴먼라이브러리에 초대합니다!
+                    </p>
+                    <div class="detail_txt">
+                      <p><span>관람기간</span><span>상시(월~금요일까지 사전 예약제로 운영)</span></p>
+                      <p><span>관람대상</span><span>청소년</span></p>
+                      <p><span>관람인원</span><span>200명/회</span></p>
+                      <p><span>관람시간</span><span>약 50분</span></p>
+                      <p><span>관람장소</span><span>서울랜드 휴먼북센터</span></p>
+                      <p><span>관람요금</span><span>무료</span></p>
+                    </div>
+                    <div class="detail_tbl">
+                      <table>
+                        <colgroup>
+                          <col width="30%">
+                          <col width="">
+                        </colgroup>
+                        <tr class="tbl_tit">
+                          <th>직업군</th><th>내용</th>
+                        </tr>
+                        <tr class="tbl_txt">
+                          <th>마술사</th>
+                          <td>꿈을 찾기 위해 많은 시행 착오를 겪었던 최영배 마술사와 진로에 대해<br>고민해보고 신기한 마술 공연을 볼 수 있는 일석이조의 시간!</td>
+                        </tr>
+                        <tr class="tbl_txt">
+                          <th>아나운서</th>
+                          <td>전직 아나운서가 직접 알려주는 아나운서 스피치!<br>나도 아나운서가 될 수 있다!</td>
+                        </tr>
+                        <tr class="tbl_txt">
+                          <th>뮤지컬배우</th>
+                          <td>노래면 노래! 연기면 연기! 파방미인 뮤지컬 배우와 함께<br>뮤지컬 세계로 떠나보는 시간</td>
+                        </tr>
+                        <tr class="tbl_txt">
+                          <th>광고전문가</th>
+                          <td>짧은 시간에 사람들을 매료시켜라! 광고전문가에게 배우는<br>효과적인 광고 만드는 방법! 광고의 세계로 여러분을 초대합니다.</td>
+                        </tr>
+                        <tr class="tbl_txt">
+                          <th>진로상담가</th>
+                          <td>진로, 꿈? 가장 고민이 많은 청소년 시기! 진로 전문상담가에게<br>함께 꿈을 찾아가는 방법을 배워볼까요?</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div><!-- tabCon1 -->
+          </div>
+          <div class="notice">
+            <div class="top">
+              <p class="notice_tit">학생단체 이용안내</p>
+              <div class="notice_txt">
+                <p>단체는 <span>20명</span>이상이어야 합니다.</p>
+                <p>이용단체는 <span>사전에 예약</span>을 주시면 더욱 편리하게 이용하실 수 있습니다.</p>
+                <p>유아, 학원, 체육관, 종교단체, 복지단체 등은 별도 문의 바랍니다. 02-509-6274~9</p>
+              </div>
+            </div>
+            <div class="bottom">
+              <p class="notice_tit">학생 단체 상담 및 예약 안내</p>
+              <div class="notice_txt">
+                <p>담당부서 : <span>서울랜드 마케팅팀</span></p>
+                <p>연락처 : <span>TEL 02-509-6274~9</span> / FAX <span>02-509-6192</span></p>
+              </div>
+              <a href="#" class="local_btn">지역별 담당자 안내</a>
+            </div>
+          </div>
+        </div><!-- sub_contents -->
+      </div>
+    </div>
+    <footer id="footer">
+      <div class="fooderTop">
+        <div class="inner">
+          <div class="sns">
+            <ul>
+              <li><a href="#">페이스북 바로가기</a></li>
+              <li><a href="#">트위터 바로가기</a></li>
+              <li><a href="#">인스타그램 바로가기</a></li>
+              <li><a href="#">블로그 바로가기</a></li>
+              <li><a href="#">유튜브 바로가기</a></li>
+            </ul>
+          </div>
+          <div class="familysite">
+            <a href="#" class="btnFamily"><span>패밀리 사이트</span></a>
+            <ul class="familyList">
+              <li><a href="#">캘리포티아피자치킨</a></li>
+              <li><a href="#">로즈힐</a></li>
+            </ul>
+          </div>
+        </div>
+      </div><!-- fooderTop -->
+      <div class="footerBottom">
+        <div class="inner">
+          <div class="link">
+            <a href="#">회사소개</a>
+            <a href="#">인재채용</a>
+            <a href="#">인재채용</a>
+            <a href="#">고객센터</a>
+            <a href="#">제휴문의</a>
+            <a href="#">개인정보처리방침</a>
+            <a href="#">이메일 무단수집거부</a>
+          </div>
+          <div class="infomation">
+            <p>
+            <span>주소 : 13829 경기도 과천시 광명로 181 (주)서울랜드</span>
+            <span>대표이사 : 최형기</span>
+            </p>
+            <p>
+            <span>사업자등록번호 : 138-81-04654</span>
+            <span>통신판매업신고번호 : 과천 제137호</span>
+            <span>안내전화 : 02-509-6000</span>
+            </p>
+            <p>
+            <span>개인정보관리 책임자 : 마케팅1팀 김태형</span>
+            <span>운영자 이메일 : webmaster@seoulland.co.kr</span>
+            <p>
+          </div>
+          <p class="copyright">
+            <span><img src="../../common/images/footer_logo.png" alt="푸터 서울랜드 로고"></span>
+            <span>&copy; copyright 2019 Seouland all rights reserved.</span>
+          </p>
+        </div>
+      </div><!-- fooderBottom -->
+    </footer>
+    <script>
+      $(function(){
+        //bgnb
+        $(".sub_nav .sub_gnb").click(function(e){
+          e.preventDefault();
+          $(this).children(".sub_gnb1").slideToggle();
+        });
+
+        //탭
+        $(".tab_menu li").click(function(e){
+          e.preventDefault();
+          var tc1 = $(this).children().attr("data-tab");
+          var tc2 = "#" + tc1;
+          $(".tab_con").hide();
+          $(tc2).show();
+          $(".tab_menu li").removeClass("on");
+          $(this).addClass("on");
+          console.log(tc1);
+          console. log(tc2);
+        });
+      });
+    </script>
+  </body>
+</html>

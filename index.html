@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>서울랜드 자연속 캐릭터 천국</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script> -->
+    <script src="common/js/script.js"></script>
+    <script src="js/main.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"> -->
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <header id="header">
+      <div class="util">
+        <div class="inner">
+          <a href="#" class="btnMall">
+            <span>캐릭터 쇼핑몰</span>
+          </a>
+          <div class="utilTopMeun">
+            <div class="login">
+              <a href="login/login.html">로그인</a><a href="login/join01.html">회원가입</a>
+            </div>
+            <div class="lang">
+              <a href="#" class="btnLang"><span>KOR</span></a>
+              <ul class="langList">
+                <li><a href="#">KOR</a></li>
+                <li><a href="#">ENG</a></li>
+                <li><a href="#">JPN</a></li>
+                <li><a href="#">CHN</a></li>
+              </ul>
+            </div><!-- lang -->
+          </div><!-- utilTopMeun -->
+        </div>
+      </div><!-- util -->
+      <div class="headerTop">
+        <div class="inner">
+          <h1 class="logo"><a href="index.html"><img src="common/images/logo.png" alt="서울랜드 로고"></a></h1>
+          <a href="#"><span>예매</span></a>
+        </div>
+      </div><!-- headerTop -->
+      <nav id="gnbWrap">
+        <div class="inner">
+          <img src="common/images/btn_gnb_menu.png" alt="전체메뉴" class="allmenu">
+          <ul id="gnb">
+            <li>
+              <a href="#">즐길거리</a>
+              <ul class="dep2">
+                <li><a href="sub/enjoy/course.html">추천코스</a></li>
+                <li><a href="#">어트랙션</a></li>
+                <li>
+                  <a href="#">공연/전시</a>
+                  <ul class="dep3">
+                    <li><a href="#">공연</a></li>
+                    <li><a href="#">전시</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">페스티벌</a></li>
+                <li>
+                  <a href="#">먹을거리</a>
+                  <ul class="dep3">
+                    <li><a href="#">식사</a></li>
+                    <li><a href="#">스낵</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">요금&amp;할인혜택</a>
+              <ul class="dep2">
+                <li><a href="#">이용요금</a></li>
+                <li><a href="#">할인프로모션</a></li>
+                <li><a href="sub/price/card.html">제휴카드</a></li>
+                <li>
+                  <a href="#">연간회원</a>
+                  <ul class="dep3">
+                    <li><a href="#">서울랜드 연간회원</a></li>
+                    <li><a href="#">둘모아 연관회원</a></li>
+                    <li><a href="#">다모아 연간회원</a></li>
+                    <li><a href="#">연간회원 약관</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">이용가이드</a>
+              <ul class="dep2">
+                <li><a href="#">운영시간</a></li>
+                <li><a href="#">오시는길</a></li>
+                <li><a href="sub/guide/facility.html">편의시설</a></li>
+                <li><a href="#">가이드맵</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">단체 안내</a>
+              <ul class="dep2">
+                <li><a href="sub/group/student.html">학생단체</a></li>
+                <li><a href="#">기업체행사</a></li>
+                <li><a href="#">외국인단체</a></li>
+                <li><a href="#">일반단체</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">고객서비스</a>
+              <ul class="dep2">
+                <li><a href="sub/customer/notice.html">공지사항</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li>
+                  <a href="#">고객소리함</a>
+                  <ul class="dep3">
+                    <li><a href="#">이용문의</a></li>
+                    <li><a href="#">칭찬/불편/건의</a></li>
+                    <li><a href="#">분실문 센터</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul><!-- gnb -->
+          <a href="#" class="scr"><img src="common/images/btn_gnb_scr.png" alt="검색"></a>
+          <div class="schArea">
+            <div class="inner">
+              <form>
+                <div class="inputArea">
+                  <input type="text" placeholder="검색어를 입력해주세요">
+                  <a href="#"><img src="common/images/btn_such_such.png" alt="검색확인"></a>
+                </div><!-- inputArea -->
+                <div class="schEx">
+                  <span>[ex]</span><span>어트랙션</span><span>티켓요금</span><span>페스티벌</span>
+                </div>
+                <button class="btnClose"><img src="common/images/btn_such_close.png" alt="검색창 닫기"></button>
+              </form>
+            </div>
+          </div><!-- schArea -->
+        </div><!-- inner -->
+      </nav><!-- gnbWrap -->
+      <div class="subMenuBg"></div>
+    </header>
+    <div class="mainVisualArea">
+      <div class="slide">
+        <img src="images/mainVisual01.jpg" alt="루나파크">
+        <img src="images/mainVisual02.jpg" alt="베스트키즈">
+      </div>
+    </div><!-- mainVisualArea -->
+    <div class="contents">
+      <section class="notice">
+        <div class="inner">
+          <div class="noticeWrap">
+            <ul class="notiSlide">
+              <li><a href="#">[안내] 세상에 없던 빛 '루나파크'</a><span>2019-04-16</span></li>
+              <li><a href="#">[안내] EDCKOREA 2019 안내</a><span>2019-08-20</span></li>
+              <li><a href="#">[안내] 푸트페스티벌'설랜은 야시장'</a><span>2019-07-24</span></li>
+              <li><a href="#">[전시] 항일역사체험전 '역사 속 저항시인'</a><span>2019-08-02</span></li>
+              <li><a href="#">[안내] 거대한 공룡의 출현 '쥬라기랜드'</a><span>2019-04-17</span></li>
+            </ul>
+            <a href="#" class="more">더보기</a>
+          </div>
+        </div>
+      </section>
+      <section class="quickLink sec">
+        <div class="inner">
+          <h2>Quick Service</h2>
+          <p>원하는 서비스를 빠르게 이용하세요.</p>
+          <ul>
+            <li><a href="#"><span class="ico"></span><span class="txt">요금안내</span></a></li>
+            <li><a href="sub/price/card.html"><span class="ico"></span><span class="txt">제휴카드</span></a></li>
+            <li><a href="#"><span class="ico"></span><span class="txt">오시는길</span></a></li>
+            <li><a href="sub/guide/facility.html"><span class="ico"></span><span class="txt">편의시설</span></a></li>
+            <li><a href="#"><span class="ico"></span><span class="txt">먹을거리</span></a></li>
+            <li><a href="#"><span class="ico"></span><span class="txt">가이드맵</span></a></li>
+            <li><a href="#"><span class="ico"></span><span class="txt">FAQ</span></a></li>
+          </ul>
+        </div>
+      </section><!-- quickLink -->
+      <section class="mainCon1 sec">
+        <div class="inner">
+          <h2>Ticket Promotion</h2>
+          <p>나에게 꼭 맞춘 알찬 할인 정보를 알아보세요.</p>
+          <ul>
+            <li><a href="#"><img src="images/img_con1_pro1.png" alt="신한카드 더블할인 종일권 18000원 야간권 14500원"></a></li>
+            <li><a href="#"><img src="images/img_con1_pro2.png" alt="제휴 실적 충족 국민,비씨,하나,삼성,농협,씨티 50%할인"></a></li>
+            <li><a href="#"><img src="images/img_con1_pro3.png" alt="M포인트 회원 현대카드 50%이벤트"></a></li>
+            <li><a href="#"><img src="images/img_con1_pro4.png" alt="서울 시민카드 할인 서울시민카드 (앱)회원 특별할인"></a></li>
+          </ul>
+          <a href="#" class="btnMore"><span>더 많은 할인 정보 보기</span></a>
+        </div>
+      </section><!-- mainCon1 -->
+      <section class="mainCon2 sec">
+        <div class="BgCon2"></div>
+        <div class="inner">
+          <h2>Recommended Courses</h2>
+          <p>더욱 즐겁게 즐기실 수 있도록 테마별 코스를 추천해 드립니다.</p>
+          <ul>
+            <li><a href="sub/enjoy/course.html"><span class="txt1">CHARACTER</span><span class="txt2">캐릭터 코스</span><span class="ico"></span></a></li>
+            <li><a href="sub/enjoy/course.html"><span class="txt1">FAMILY</span><span class="txt2">가족 코스</span><span class="ico"></span></a></li>
+            <li><a href="sub/enjoy/course.html"><span class="txt1">CHILDREN</span><span class="txt2">어린이 코스</span><span class="ico"></span></a></li>
+            <li><a href="sub/enjoy/course.html"><span class="txt1">LOVER</span><span class="txt2">연인 코스</span><span class="ico"></span></a></li>
+            <li><a href="sub/enjoy/course.html"><span class="txt1">FRIEND</span><span class="txt2">우정 코스</span><span class="ico"></span></a></li>
+            <li><a href="sub/enjoy/course.html"><span class="txt1">RAINY DAY</span><span class="txt2">우산 코스</span><span class="ico"></span></a></li>
+          </ul>
+        </div>
+      </section><!-- mainCon2 -->
+      <section class="mainCon3 sec">
+        <!-- <div class="BgCon3"></div> -->
+        <div class="inner">
+          <h2>Attraction</h2>
+          <p>재미있고 즐거운 다양한 어트랙션을 만나보세요.</p>
+          <ul>
+            <li><a href="#"><span>세계의 광장</span></a></li>
+            <li><a href="#"><span>모험의 나라</span></a></li>
+            <li><a href="#"><span>환상의 나라</span></a></li>
+            <li><a href="#"><span>미래의 나라</span></a></li>
+            <li><a href="#"><span>삼천리 동산</span></a></li>
+          </ul>
+          <a href="#" class="btnMore"><span>더 많은 어트랙션 보기</span></a>
+        </div>
+      </section><!-- mainCon3 -->
+      <section class="mainCon4 sec">
+        <div class="inner">
+          <h2>Performances and Parades</h2>
+          <p class="txt_s">다양한 공연 및 퍼레이드 정보를 한눈에 확인해보세요.</p>
+          <div class="paradeWrap">
+            <ul class="parade">
+              <li>
+                <a href="#">
+                  <span class="paradImg"><img src="images/img_con4_par1.jpg" alt="음악 싸-롱"></span>
+                  <div class="txtWrap">
+                    <div class="txt">
+                      <p>음악 싸-롱</p>
+                      <p>DJ주니와 아롱이 다롱이가<br>함께 하는 음악 시간여행!</p>
+                      <p>장소: 통나무 무대<br>시간: PM 1:00-3:00</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="paradImg"><img src="images/img_con4_par2.jpg" alt="뮤직 라이트 플래닛"></span>
+                  <div class="txtWrap">
+                    <div class="txt">
+                      <p>뮤직 라이트<br>플래닛</p>
+                      <p>국내 최초 레이저<br>3D 멀티미디어 맵핑쇼<br>(뮤직 라이트 플래닛!)</p>
+                      <p>장소: 지구별 무대<br>시간: PM 8:30</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="paradImg"><img src="images/img_con4_par3.jpg" alt="루나밴드"></span>
+                  <div class="txtWrap">
+                    <div class="txt">
+                      <p>루나밴드<br>(Luna Band)</p>
+                      <p>멋진 퍼포먼스와<br>라이브 음악의 향연!</p>
+                      <p>장소: 배니스 무대<br>시간: PM 7:30</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="paradImg"><img src="images/img_con4_par4.jpg" alt="워터워즈 썸머파이트"></span>
+                  <div class="txtWrap">
+                    <div class="txt">
+                      <p>워터워즈<br>"썸머파이트"</p>
+                      <p>최정예 전사들과 함께<br>물총 싸움에 참전하라!</p>
+                      <p>장소: 서계의 광장<br>시간: PM12:00, PM2:00, PM4:00</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="paradImg"><img src="images/img_con4_par5.jpg" alt="페인터스 서커스"></span>
+                  <div class="txtWrap">
+                    <div class="txt">
+                      <p>페인터스<br>서커스</p>
+                      <p>신나는 거리 유랑단의<br>페인터‘s 서커스!</p>
+                      <p>장소 : 통나무 무대 앞<br>시간 : PM 12:00,PM 03:00,PM 06:00</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="paradImg"><img src="images/img_con4_par6.jpg" alt="퍼니 쿠깅 매직쇼"></span>
+                  <div class="txtWrap">
+                    <div class="txt">
+                      <p>퍼니 쿠깅<br>매직쇼</p>
+                      <p>마술사 비탈리가 펼치는<br>신나는 요리 교실!</p>
+                      <p>장소 : 통나무무대<br>시간 : PM 01:00,PM 05:00</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div><!-- paradeWrap -->
+          <a href="#" class="btnMore"><span>더 많은 공연 정보 보기</span></a>
+        </div>
+      </section><!-- mainCon4 -->
+    </div><!-- contents -->
+    <footer id="footer">
+      <div class="fooderTop">
+        <div class="inner">
+          <div class="sns">
+            <ul>
+              <li><a href="#">페이스북 바로가기</a></li>
+              <li><a href="#">트위터 바로가기</a></li>
+              <li><a href="#">인스타그램 바로가기</a></li>
+              <li><a href="#">블로그 바로가기</a></li>
+              <li><a href="#">유튜브 바로가기</a></li>
+            </ul>
+          </div>
+          <div class="familysite">
+            <a href="#" class="btnFamily"><span>패밀리 사이트</span></a>
+            <ul class="familyList">
+              <li><a href="#">캘리포티아피자치킨</a></li>
+              <li><a href="#">로즈힐</a></li>
+            </ul>
+          </div>
+        </div>
+      </div><!-- fooderTop -->
+      <div class="footerBottom">
+        <div class="inner">
+          <div class="link">
+            <a href="#">회사소개</a>
+            <a href="#">인재채용</a>
+            <a href="#">인재채용</a>
+            <a href="#">고객센터</a>
+            <a href="#">제휴문의</a>
+            <a href="#">개인정보처리방침</a>
+            <a href="#">이메일 무단수집거부</a>
+          </div>
+          <div class="infomation">
+            <p>
+            <span>주소 : 13829 경기도 과천시 광명로 181 (주)서울랜드</span>
+            <span>대표이사 : 최형기</span>
+            </p>
+            <p>
+            <span>사업자등록번호 : 138-81-04654</span>
+            <span>통신판매업신고번호 : 과천 제137호</span>
+            <span>안내전화 : 02-509-6000</span>
+            </p>
+            <p>
+            <span>개인정보관리 책임자 : 마케팅1팀 김태형</span>
+            <span>운영자 이메일 : webmaster@seoulland.co.kr</span>
+            <p>
+          </div>
+          <p class="copyright">
+            <span><img src="common/images/footer_logo.png" alt="푸터 서울랜드 로고"></span>
+            <span>&copy; copyright 2019 Seouland all rights reserved.</span>
+          </p>
+        </div>
+      </div><!-- fooderBottom -->
+    </footer>
+    <script>
+    $(function(){
+      //bxSlider
+      $('.slide').bxSlider({
+        mode: 'horizontal',
+        autoHover: true,
+        auto: true
+      });
+      $('.parade').bxSlider({
+        mode: 'horizontal',
+        slideWidth: 350,
+        slideMargin: 40,
+        minSlides: 3,
+        maxSlides: 3,
+        moveSlides: 3,
+        controls : false,
+        auto: true
+      });
+      $('.notiSlide').bxSlider({
+        mode: 'vertical',
+        auto: true,
+        pager: false
+      });
+    });
+    </script>
+  </body>
+</html>

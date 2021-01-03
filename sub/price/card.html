@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>서울랜드 자연속 캐릭터 천국</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/card.css">
+    <script src="../../common/js/script.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="util">
+        <div class="inner">
+          <a href="#" class="btnMall">
+            <span>캐릭터 쇼핑몰</span>
+          </a>
+          <div class="utilTopMeun">
+            <div class="login">
+              <a href="../../login/login.html">로그인</a><a href="../../login/join01.html">회원가입</a>
+            </div>
+            <div class="lang">
+              <a href="#" class="btnLang"><span>KOR</span></a>
+              <ul class="langList">
+                <li><a href="#">KOR</a></li>
+                <li><a href="#">ENG</a></li>
+                <li><a href="#">JPN</a></li>
+                <li><a href="#">CHN</a></li>
+              </ul>
+            </div><!-- lang -->
+          </div><!-- utilTopMeun -->
+        </div>
+      </div><!-- util -->
+      <div class="headerTop">
+        <div class="inner">
+          <h1 class="logo"><a href="../../index.html"><img src="../../common/images/logo.png" alt="서울랜드 로고"></a></h1>
+          <a href="#"><span>예매</span></a>
+        </div>
+      </div><!-- headerTop -->
+      <nav id="gnbWrap">
+        <div class="inner">
+          <img src="../../common/images/btn_gnb_menu.png" alt="전체메뉴" class="allmenu">
+          <ul id="gnb">
+            <li>
+              <a href="#">즐길거리</a>
+              <ul class="dep2">
+                <li><a href="../enjoy/course.html">추천코스</a></li>
+                <li><a href="#">어트랙션</a></li>
+                <li>
+                  <a href="#">공연/전시</a>
+                  <ul class="dep3">
+                    <li><a href="#">공연</a></li>
+                    <li><a href="#">전시</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">페스티벌</a></li>
+                <li>
+                  <a href="#">먹을거리</a>
+                  <ul class="dep3">
+                    <li><a href="#">식사</a></li>
+                    <li><a href="#">스낵</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">요금&amp;할인혜택</a>
+              <ul class="dep2">
+                <li><a href="#">이용요금</a></li>
+                <li><a href="#">할인프로모션</a></li>
+                <li><a href="card.html">제휴카드</a></li>
+                <li>
+                  <a href="#">연간회원</a>
+                  <ul class="dep3">
+                    <li><a href="#">서울랜드 연간회원</a></li>
+                    <li><a href="#">둘모아 연관회원</a></li>
+                    <li><a href="#">다모아 연간회원</a></li>
+                    <li><a href="#">연간회원 약관</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">이용가이드</a>
+              <ul class="dep2">
+                <li><a href="#">운영시간</a></li>
+                <li><a href="#">오시는길</a></li>
+                <li><a href="../guide/facility.html">편의시설</a></li>
+                <li><a href="#">가이드맵</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">단체 안내</a>
+              <ul class="dep2">
+                <li><a href="../group/student.html">학생단체</a></li>
+                <li><a href="#">기업체행사</a></li>
+                <li><a href="#">외국인단체</a></li>
+                <li><a href="#">일반단체</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">고객서비스</a>
+              <ul class="dep2">
+                <li><a href="../customer/notice.html">공지사항</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li>
+                  <a href="#">고객소리함</a>
+                  <ul class="dep3">
+                    <li><a href="#">이용문의</a></li>
+                    <li><a href="#">칭찬/불편/건의</a></li>
+                    <li><a href="#">분실문 센터</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul><!-- gnb -->
+          <a href="#" class="scr"><img src="../../common/images/btn_gnb_scr.png" alt="검색"></a>
+          <div class="schArea">
+            <div class="inner">
+              <form>
+                <div class="inputArea">
+                  <input type="text" placeholder="검색어를 입력해주세요">
+                  <a href="#"><img src="../../common/images/btn_such_such.png" alt="검색확인"></a>
+                </div><!-- inputArea -->
+                <div class="schEx">
+                  <span>[ex]</span><span>어트랙션</span><span>티켓요금</span><span>페스티벌</span>
+                </div>
+                <button class="btnClose"><img src="../../common/images/btn_such_close.png" alt="검색창 닫기"></button>
+              </form>
+            </div>
+          </div><!-- schArea -->
+        </div><!-- inner -->
+      </nav><!-- gnbWrap -->
+      <div class="subMenuBg"></div>
+    </header>
+    <div id="container">
+      <div class="tit_bg">
+        <h2>요금&amp;할인혜택</h2>
+      </div>
+      <div class="inner">
+        <div class="sub_nav_wrap">
+          <ul class="sub_nav">
+            <li class="home"><a href="../../index.html">Home</a></li>
+            <li class="gnb1 sub_gnb">
+              <a href="#">요금&amp;할인혜택</a>
+              <ul class="sub_gnb1">
+                <li><a href="#">즐길거리</a></li>
+                <li><a href="#">이용가이드</a></li>
+                <li><a href="#">단체 안내</a></li>
+                <li><a href="#">고객서비스</a></li>
+              </ul>
+            </li>
+            <li class="gnb2 sub_gnb">
+              <a href="#">제휴카드</a>
+              <ul class="sub_gnb1">
+                <li><a href="#">이용요금</a></li>
+                <li><a href="#">할인프로모션</a></li>
+                <li><a href="#">연간회원</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="sub_contents">
+          <h3>제휴카드</h3>
+          <div class="jq_tabonoff comm_tab1">
+            <ul class="jq_tab tab_menu">
+              <li><a href="javascript:;" class="tit">50%</a></li>
+              <li><a href="javascript:;" class="tit">40%</a></li>
+            </ul>
+            <div class="jq_cont tab_cont">
+              <!-- //탭1 -->
+              <div class="cont">
+                <div class="jq_tabonoff comm_tab2 tab2_1">
+                  <ul class="jq_tab tab_menu">
+                    <li><a href="javascript:;" class="tit">신한카드</a></li>
+                    <li><a href="javascript:;" class="tit">BC카드</a></li>
+                    <li><a href="javascript:;" class="tit">KB국민카드</a></li>
+                    <li><a href="javascript:;" class="tit">삼성카드</a></li>
+                    <li><a href="javascript:;" class="tit">씨티카드</a></li>
+                  </ul>
+                  <div class="jq_cont tab_cont">
+                    <!-- 신한카드내용 -->
+                    <div class="cont">
+                      <ul>
+                        <li>
+                          <img src="images/img_card_sh1.png" alt="신한카드 4050">
+                          <div class="txt_wrap">
+                            <p class="tit">신한카드 4050</p>
+                            <div class="txt">
+                              <p class="con_tit">이용혜택</p>
+                              <span>- 자유이용권 50% 할인(본인에 한함. 전 놀이공원 1일 1회)</span>
+                            </div>
+                            <div class="txt">
+                              <p class="con_tit">이용조건</p>
+                              <span>
+                                - 서비스 이용 직전월 해당카드 이용금액(일시불+할부, 1일~말일) 30만원 이상 이용 실적이 있는 회원<br>
+                                (현금서비스 제외, 할부실적은 첫 승인월 이후 미포함)<br>
+                                - 신규 발급회원인 경우 사용등록월을 포함하여 2개월간 할인이 적용됩니다.<br>
+                                - 1일 1회 연간 각 놀이공원 3회 이용가능<br>
+                                - 타 놀이공원 당일 중복할인 불가
+                              </span>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <img src="images/img_card_sh2.png" alt="신한카드 The BEST">
+                          <div class="txt_wrap">
+                            <p class="tit">신한카드 The BEST</p>
+                            <div class="txt">
+                              <p class="con_tit">이용혜택</p>
+                              <span>- 자유이용권 50% 할인(본인에 한함. 전 놀이공원 1일 1회)</span>
+                            </div>
+                            <div class="txt">
+                              <p class="con_tit">이용조건</p>
+                              <span>
+                                - 서비스 이용 직전월 해당카드 이용금액(일시불+할부, 1일~말일) 30만원 이상 이용 실적이 있는 회원<br>
+                                (현금서비스 제외, 할부실적은 첫 승인월 이후 미포함)<br>
+                                - 신규 발급회원인 경우 사용등록월을 포함하여 2개월간 할인이 적용됩니다.<br>
+                                - 1일 1회 연간 각 놀이공원 3회 이용가능<br>
+                                - 타 놀이공원 당일 중복할인 불가
+                              </span>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <img src="images/img_card_sh3.png" alt="SK엔크린 신한카드">
+                          <div class="txt_wrap">
+                            <p class="tit">SK엔크린 신한카드</p>
+                            <div class="txt">
+                              <p class="con_tit">이용혜택</p>
+                              <span>- 자유이용권 50% 할인(본인에 한함. 전 놀이공원 1일 1회)</span>
+                            </div>
+                            <div class="txt">
+                              <p class="con_tit">이용조건</p>
+                              <span>
+                                - 서비스 이용 직전월 해당카드 이용금액(일시불+할부, 1일~말일) 30만원 이상 이용 실적이 있는 회원<br>
+                                (현금서비스 제외, 할부실적은 첫 승인월 이후 미포함)<br>
+                                - 신규 발급회원인 경우 사용등록월을 포함하여 2개월간 할인이 적용됩니다.<br>
+                                - 1일 1회 연간 각 놀이공원 3회 이용가능<br>
+                                - 타 놀이공원 당일 중복할인 불가
+                              </span>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div><!-- cont -->
+                    <!-- 비씨카드내용 -->
+                    <div class="cont">
+                      <ul>
+                        <li>
+                          <img src="images/img_card_bc1.png" alt="[우리] Most 카드">
+                          <div class="txt_wrap">
+                            <p class="tit">[우리] Most 카드</p>
+                            <div class="txt">
+                              <p class="con_tit">이용혜택</p>
+                              <span>- 파크이용권 50% 할인 (본인에 한함)</span>
+                            </div>
+                            <div class="txt">
+                              <p class="con_tit">이용조건</p>
+                              <span>
+                                - 전월 국내신판 실적 30만원 이상 시 통합 월1회, 연10회 제공<br>
+                                (* 단, 카드 수령등록일로부터 다음달 말일까지 실적에 상관없이 서비스 제공)<br>
+                                - 카드종류에 따라 이용 실적 및 기준이 다르게 적용됩니다.<br>
+                                - 자세한 사항은 카드사 홈페이지 또는 카드사에 문의바랍니다.
+                              </span>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <img src="images/img_card_bc2.png" alt="[NH농협] 엘포인트 카드">
+                          <div class="txt_wrap">
+                            <p class="tit">[NH농협] 엘포인트 카드</p>
+                            <div class="txt">
+                              <p class="con_tit">이용혜택</p>
+                              <span>- 자유이용권 50% 할인 또는 무료입장 (본인에 한함)</span>
+                            </div>
+                            <div class="txt">
+                              <p class="con_tit">이용조건</p>
+                              <span>
+                                - 전월 국내외 신판 30만원 이상 시 통합 월1회, 연6회 제공<br>
+                                (* 단, 카드 수령등록일로부터 다음달 말일까지는 전월실적 미달 시에도 서비스 제공)<br>
+                                - 카드종류에 따라 이용 실적 및 기준이 다르게 적용됩니다.<br>
+                                - 자세한 사항은 카드사 홈페이지 또는 카드사에 문의바랍니다.
+                              </span>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <img src="images/img_card_bc3.png" alt="[NH농협] KT수퍼할부카드">
+                          <div class="txt_wrap">
+                            <p class="tit">[NH농협] KT수퍼할부카드</p>
+                            <div class="txt">
+                              <p class="con_tit">이용혜택</p>
+                              <span>- 파크이용권 50% 할인 또는 무료입장 중 선택 (본인에 한함)</span>
+                            </div>
+                            <div class="txt">
+                              <p class="con_tit">이용조건</p>
+                              <span>
+                                - 전월 국내외 신판 30만원 이상 시 통합 월1회, 연6회 제공<br>
+                               (* 단, 카드 수령등록일로부터 다음달 말일까지는 국내 가맹점 30만원 이상 시 그 다음날부터 제공)<br>
+                               - 카드종류에 따라 이용 실적 및 기준이 다르게 적용됩니다.<br>
+                               - 자세한 사항은 카드사 홈페이지 또는 카드사에 문의바랍니다.
+                              </span>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- 국민카드내용 -->
+                    <div class="cont">
+                      <ul>
+                        <li>
+                          <img src="images/img_card_kb.png" alt="KB모든 신용카드">
+                          <div class="txt_wrap">
+                            <p class="tit">KB모든 신용카드</p>
+                            <div class="txt">
+                              <p class="con_tit">이용혜택</p>
+                              <span>- 자유이용권 50% 할인</span>
+                            </div>
+                            <div class="txt">
+                              <p class="con_tit">이용조건</p>
+                              <span>
+                                - 카드소지자 본인 1인 1회, 연간 놀이공원 총 10회 사용가능<br>
+                                - 서비스 이용 월 직전 3개월간 일시불,<br>
+                                  할부금액 월평균 30만원 이상 결제(청구서 수령 후 대금납입)한 고객에 한합니다.<br>
+                                - 매표소에서 정상요금으로 승인하시고, 대금 청구 시 할인된 금액으로 청구됩니다.<br>
+                                  (카드사의 사정으로 변경 또는 중단될 수 있습니다.)
+                              </span>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- 삼성카드내용 -->
+                    <div class="cont">
+                      <ul>
+                        <li>
+                          <img src="images/img_card_ss1.png" alt="삼성카드 5 V3">
+                          <div class="txt_wrap">
+                            <p class="tit">삼성카드 5 V3</p>
+                            <div class="txt">
+                              <p class="con_tit">이용혜택</p>
+                              <span>- 파크이용권 50% 현장 할인</span>
+                            </div>
+                            <div class="txt">
+                              <p class="con_tit">이용조건</p>
+                              <span>
+                                - 자세한 내용은 삼성카드 홈페이지 또는 대표전화로 문의하시기 바랍니다.<br>
+                                - 월 1회, 연 4회 제공됩니다.  (가족카드 제외)<br>
+                                - 전월 이용금액 30만원 이상 시 제공<br>
+                                - 발급월 + 1개월까지는 전월 이용금액 30만원 미만 시에도 혜택제공
+                              </span>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <img src="images/img_card_ss2.png" alt="삼성카드 3 V3">
+                          <div class="txt_wrap">
+                            <p class="tit">삼성카드 3 V3</p>
+                            <div class="txt">
+                              <p class="con_tit">이용혜택</p>
+                              <span>- 파크이용권 50% 현장 할인</span>
+                            </div>
+                            <div class="txt">
+                              <p class="con_tit">이용조건</p>
+                              <span>
+                                - 자세한 내용은 삼성카드 홈페이지 또는 대표전화로 문의하시기 바랍니다.<br>
+                                - 월 1회, 연 4회 제공됩니다.  (가족카드 제외)<br>
+                                - 전월 이용금액 30만원 이상 시 제공<br>
+                                - 발급월 + 1개월까지는 전월 이용금액 30만원 미만 시에도 혜택제공
+                              </span>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <img src="images/img_card_ss3.png" alt="THE O">
+                          <div class="txt_wrap">
+                            <p class="tit">THE O</p>
+                            <div class="txt">
+                              <p class="con_tit">이용혜택</p>
+                              <span>- 자유이용권 50% 현장 할인</span>
+                            </div>
+                            <div class="txt">
+                              <p class="con_tit">이용조건</p>
+                              <span>
+                                - 숫자카드 외 기타카드의 경우 삼성카드 홈페이지을 통해서 확인바랍니다.<br>
+                                - 일 1회, 연 5회 제공됩니다.<br>
+                                - 직전 3개월 월 평균 일시불 및 할부 이용금액 30만원 이상시 제공됩니다.<br>
+                                  (일부 카드의 경우 20만원 이상시 제공되는 등 이용조건이 다를 수 있음으로 홈페이지 확인필요)<br>
+                                - 신규회원의 경우 이용금액에 관계없이 1회 제공됩니다
+                              </span>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- 씨티카드내용 -->
+                    <div class="cont">
+                      <ul>
+                        <li>
+                          <img src="images/img_card_ct1.png" alt="씨티 클리어 카드">
+                          <div class="txt_wrap">
+                            <p class="tit">씨티 클리어 카드</p>
+                            <div class="txt">
+                              <p class="con_tit">이용혜택</p>
+                              <span>- 자유이용권 50% 할인 (본인에 한함, 전 놀이공원 1일 1회)</span>
+                            </div>
+                            <div class="txt">
+                              <p class="con_tit">이용조건</p>
+                              <span>
+                                - 일 1회, 연 2회(본인카드 2회, 가족카드 2회)<br>
+                                - 전월실적 30만원 이상일 경우 혜택 제공(전월 실적 기간동안 포인트 적립 또는 청구할인 기준)<br>
+                                - 신규발급회원의 경우 발급일로부터 1개월간 이용금액 관계 없이 할인<br>
+                                - 다른 놀이공원과 당일 중복 할인 불가
+                              </span>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <img src="images/img_card_ct2.png" alt="신세계 씨티 리워드 카드">
+                          <div class="txt_wrap">
+                            <p class="tit">신세계 씨티 리워드 카드</p>
+                            <div class="txt">
+                              <p class="con_tit">이용혜택</p>
+                              <span>- 자유이용권 50% 할인 (본인에 한함, 전 놀이공원 1일 1회)</span>
+                            </div>
+                            <div class="txt">
+                              <p class="con_tit">이용조건</p>
+                              <span>
+                                - 일 1회, 연 2회(본인카드 2회, 가족카드 2회)<br>
+                                - 전월실적 30만원 이상일 경우 혜택 제공(전월 실적 기간동안 포인트 적립 또는 청구할인 기준)<br>
+                                - 신규발급회원의 경우 발급일로부터 1개월간 이용금액 관계 없이 할인<br>
+                                - 다른 놀이공원과 당일 중복 할인 불가
+                              </span>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <img src="images/img_card_ct3.png" alt="씨티 리워드 카드">
+                          <div class="txt_wrap">
+                            <p class="tit">씨티 리워드 카드</p>
+                            <div class="txt">
+                              <p class="con_tit">이용혜택</p>
+                              <span>- 자유이용권 50% 할인 (본인에 한함, 전 놀이공원 1일 1회)</span>
+                            </div>
+                            <div class="txt">
+                              <p class="con_tit">이용조건</p>
+                              <span>
+                                - 일 1회, 연 2회(본인카드 2회, 가족카드 2회)<br>
+                                - 전월실적 30만원 이상일 경우 혜택 제공(전월 실적 기간동안 포인트 적립 또는 청구할인 기준)<br>
+                                - 신규발급회원의 경우 발급일로부터 1개월간 이용금액 관계 없이 할인<br>
+                                - 다른 놀이공원과 당일 중복 할인 불가
+                              </span>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div><!-- tab_cont -->
+                </div><!-- comm_tab2 -->
+              </div><!-- cont -->
+
+              <!-- //탭2 -->
+              <div class="cont">
+                <div class="jq_tabonoff comm_tab2 tab2_2">
+                  <ul class="jq_tab tab_menu">
+                    <li><a href="javascript:;" class="tit">롯데카드</a></li>
+                    <li><a href="javascript:;" class="tit">OK캐쉬백</a></li>
+                  </ul>
+                  <div class="jq_cont tab_cont">
+                    <!-- 롯데카드내용 -->
+                    <div class="cont">
+                      <ul>
+                        <li>
+                          <img src="images/img_card_lt.png" alt="롯데모든 카드">
+                          <div class="txt_wrap">
+                            <p class="tit">롯데모든 카드</p>
+                            <div class="txt">
+                              <p class="con_tit">이용혜택</p>
+                              <span>- 파크이용권 40% 할인</span>
+                            </div>
+                            <div class="txt">
+                              <p class="con_tit">이용조건</p>
+                              <span>
+                                - 카드소지자 본인 1일 1회 사용가능<br>
+                                - 카드 이용실적 제한없음
+                              </span>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- ok캐쉬백내용 -->
+                    <div class="cont">
+                      <ul>
+                        <li>
+                          <img src="images/img_card_ok.png" alt="OK캐쉬백 모든 카드">
+                          <div class="txt_wrap">
+                            <p class="tit">OK캐쉬백 모든 카드</p>
+                            <div class="txt">
+                              <p class="con_tit">이용혜택</p>
+                              <span>- 회원 본인 파크이용권 약 40%할인</span>
+                            </div>
+                            <div class="txt">
+                              <p class="con_tit">이용조건</p>
+                              <span>
+                                - 매표소에서 OK캐쉬백 카드를 제시하시면, 정상가의 20% 포인트를 차감하고 40% 할인을 받으실 수 있습니다.<br>
+                                (OK캐쉬백 카드 제시 및 비밀번호 생월일 4자리 입력)<br>
+                                -제휴사의 사정에 따라 변경/제한될 수 있습니다.
+                              </span>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div><!-- tab_cont -->
+                </div><!-- comm_tab2 -->
+              </div><!-- cont -->
+
+            </div><!-- tab_cont -->
+          </div><!-- comm_tab1 -->
+        </div><!-- sub_contents -->
+      </div>
+    </div>
+    <footer id="footer">
+      <div class="fooderTop">
+        <div class="inner">
+          <div class="sns">
+            <ul>
+              <li><a href="#">페이스북 바로가기</a></li>
+              <li><a href="#">트위터 바로가기</a></li>
+              <li><a href="#">인스타그램 바로가기</a></li>
+              <li><a href="#">블로그 바로가기</a></li>
+              <li><a href="#">유튜브 바로가기</a></li>
+            </ul>
+          </div>
+          <div class="familysite">
+            <a href="#" class="btnFamily"><span>패밀리 사이트</span></a>
+            <ul class="familyList">
+              <li><a href="#">캘리포티아피자치킨</a></li>
+              <li><a href="#">로즈힐</a></li>
+            </ul>
+          </div>
+        </div>
+      </div><!-- fooderTop -->
+      <div class="footerBottom">
+        <div class="inner">
+          <div class="link">
+            <a href="#">회사소개</a>
+            <a href="#">인재채용</a>
+            <a href="#">인재채용</a>
+            <a href="#">고객센터</a>
+            <a href="#">제휴문의</a>
+            <a href="#">개인정보처리방침</a>
+            <a href="#">이메일 무단수집거부</a>
+          </div>
+          <div class="infomation">
+            <p>
+            <span>주소 : 13829 경기도 과천시 광명로 181 (주)서울랜드</span>
+            <span>대표이사 : 최형기</span>
+            </p>
+            <p>
+            <span>사업자등록번호 : 138-81-04654</span>
+            <span>통신판매업신고번호 : 과천 제137호</span>
+            <span>안내전화 : 02-509-6000</span>
+            </p>
+            <p>
+            <span>개인정보관리 책임자 : 마케팅1팀 김태형</span>
+            <span>운영자 이메일 : webmaster@seoulland.co.kr</span>
+            <p>
+          </div>
+          <p class="copyright">
+            <span><img src="../../common/images/footer_logo.png" alt="푸터 서울랜드 로고"></span>
+            <span>&copy; copyright 2019 Seouland all rights reserved.</span>
+          </p>
+        </div>
+      </div><!-- fooderBottom -->
+    </footer>
+    <script>
+      $(function(){
+        //bgnb
+        $(".sub_nav .sub_gnb").click(function(e){
+          e.preventDefault();
+          $(this).children(".sub_gnb1").slideToggle();
+        });
+
+        //이중탭
+        $('.jq_tabonoff>.jq_cont').children().css('display', 'none');
+        $('.jq_tabonoff>.jq_cont div:first-child').css('display', 'block');
+        $('.jq_tabonoff>.jq_tab li:first-child').addClass('on');
+        $('.jq_tabonoff').delegate('.jq_tab>li', 'click', function(){
+          var index = $(this).parent().children().index(this);
+          $(this).siblings().removeClass();
+          $(this).addClass('on');
+          $(this).parent().next('.jq_cont').children().hide().eq(index).show();
+        });
+      });
+    </script>
+  </body>
+</html>

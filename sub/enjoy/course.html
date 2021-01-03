@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>서울랜드 자연속 캐릭터 천국</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/course.css">
+    <script src="../../common/js/script.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="util">
+        <div class="inner">
+          <a href="#" class="btnMall">
+            <span>캐릭터 쇼핑몰</span>
+          </a>
+          <div class="utilTopMeun">
+            <div class="login">
+              <a href="../../login/login.html">로그인</a><a href="../../login/join01.html">회원가입</a>
+            </div>
+            <div class="lang">
+              <a href="#" class="btnLang"><span>KOR</span></a>
+              <ul class="langList">
+                <li><a href="#">KOR</a></li>
+                <li><a href="#">ENG</a></li>
+                <li><a href="#">JPN</a></li>
+                <li><a href="#">CHN</a></li>
+              </ul>
+            </div><!-- lang -->
+          </div><!-- utilTopMeun -->
+        </div>
+      </div><!-- util -->
+      <div class="headerTop">
+        <div class="inner">
+          <h1 class="logo"><a href="../../index.html"><img src="../../common/images/logo.png" alt="서울랜드 로고"></a></h1>
+          <a href="#"><span>예매</span></a>
+        </div>
+      </div><!-- headerTop -->
+      <nav id="gnbWrap">
+        <div class="inner">
+          <img src="../../common/images/btn_gnb_menu.png" alt="전체메뉴" class="allmenu">
+          <ul id="gnb">
+            <li>
+              <a href="#">즐길거리</a>
+              <ul class="dep2">
+                <li><a href="course.html">추천코스</a></li>
+                <li><a href="#">어트랙션</a></li>
+                <li>
+                  <a href="#">공연/전시</a>
+                  <ul class="dep3">
+                    <li><a href="#">공연</a></li>
+                    <li><a href="#">전시</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">페스티벌</a></li>
+                <li>
+                  <a href="#">먹을거리</a>
+                  <ul class="dep3">
+                    <li><a href="#">식사</a></li>
+                    <li><a href="#">스낵</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">요금&amp;할인혜택</a>
+              <ul class="dep2">
+                <li><a href="#">이용요금</a></li>
+                <li><a href="#">할인프로모션</a></li>
+                <li><a href="../price/card.html">제휴카드</a></li>
+                <li>
+                  <a href="#">연간회원</a>
+                  <ul class="dep3">
+                    <li><a href="#">서울랜드 연간회원</a></li>
+                    <li><a href="#">둘모아 연관회원</a></li>
+                    <li><a href="#">다모아 연간회원</a></li>
+                    <li><a href="#">연간회원 약관</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">이용가이드</a>
+              <ul class="dep2">
+                <li><a href="#">운영시간</a></li>
+                <li><a href="#">오시는길</a></li>
+                <li><a href="../guide/facility.html">편의시설</a></li>
+                <li><a href="#">가이드맵</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">단체 안내</a>
+              <ul class="dep2">
+                <li><a href="../group/student.html">학생단체</a></li>
+                <li><a href="#">기업체행사</a></li>
+                <li><a href="#">외국인단체</a></li>
+                <li><a href="#">일반단체</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">고객서비스</a>
+              <ul class="dep2">
+                <li><a href="../customer/notice.html">공지사항</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li>
+                  <a href="#">고객소리함</a>
+                  <ul class="dep3">
+                    <li><a href="#">이용문의</a></li>
+                    <li><a href="#">칭찬/불편/건의</a></li>
+                    <li><a href="#">분실문 센터</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul><!-- gnb -->
+          <a href="#" class="scr"><img src="../../common/images/btn_gnb_scr.png" alt="검색"></a>
+          <div class="schArea">
+            <div class="inner">
+              <form>
+                <div class="inputArea">
+                  <input type="text" placeholder="검색어를 입력해주세요">
+                  <a href="#"><img src="../../common/images/btn_such_such.png" alt="검색확인"></a>
+                </div><!-- inputArea -->
+                <div class="schEx">
+                  <span>[ex]</span><span>어트랙션</span><span>티켓요금</span><span>페스티벌</span>
+                </div>
+                <button class="btnClose"><img src="../../common/images/btn_such_close.png" alt="검색창 닫기"></button>
+              </form>
+            </div>
+          </div><!-- schArea -->
+        </div><!-- inner -->
+      </nav><!-- gnbWrap -->
+      <div class="subMenuBg"></div>
+    </header>
+    <div id="container">
+      <div class="tit_bg">
+        <h2>즐길거리</h2>
+      </div>
+      <div class="inner">
+        <div class="sub_nav_wrap">
+          <ul class="sub_nav">
+            <li class="home"><a href="../../index.html">Home</a></li>
+            <li class="gnb1 sub_gnb">
+              <a href="#">즐길거리</a>
+              <ul class="sub_gnb1">
+                <li><a href="#">요금&amp;할인혜택</a></li>
+                <li><a href="#">이용가이드</a></li>
+                <li><a href="#">단체 안내</a></li>
+                <li><a href="#">고객서비스</a></li>
+              </ul>
+            </li>
+            <li class="gnb2 sub_gnb">
+              <a href="course.html">추천코스</a>
+              <ul class="sub_gnb1">
+                <li><a href="#">어트랙션</a></li>
+                <li><a href="#">공연/전시</a></li>
+                <li><a href="#">페스티벌</a></li>
+                <li><a href="#">먹을거리</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="sub_contents">
+          <h3>추천코스</h3>
+          <ul class="tab_menu">
+            <li class="on"><a href="#" data-tab="tab_con1"><span class="txt1">CHARACTER</span><span class="txt2">캐릭터 코스</span><span class="ico"></span></a></li>
+            <li><a href="#" data-tab="tab_con2"><span class="txt1">FAMILY</span><span class="txt2">가족 코스</span><span class="ico"></span></a></li>
+            <li><a href="#" data-tab="tab_con3"><span class="txt1">CHILDREN</span><span class="txt2">어린이 코스</span><span class="ico"></span></a></li>
+            <li><a href="#" data-tab="tab_con4"><span class="txt1">LOVER</span><span class="txt2">연인 코스</span><span class="ico"></span></a></li>
+            <li><a href="#" data-tab="tab_con5"><span class="txt1">FRIEND</span><span class="txt2">우정 코스</span><span class="ico"></span></a></li>
+            <li><a href="#" data-tab="tab_con6"><span class="txt1">RAINY DAY</span><span class="txt2">우산 코스</span><span class="ico"></span></a></li>
+          </ul>
+          <div class="tab_con_wrap">
+            <div id="tab_con1" class="tab_con">
+              <ol class="attract_list">
+                <li class="first_list">
+                  <a href="#">
+                    <span class="locate">캐릭터 타운</span>
+                    <span class="txt_wrap">
+                      <span class="tit">티키톡 열차</span>
+                      <span class="txt">
+                        시속 16km의 어린이와 함께 즐기는<br>롤러 코스터
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">캐릭터 타운</span>
+                    <span class="info">
+                      <span class="kids">키즈</span>
+                    </span>
+                    <span class="txt_wrap">
+                      <span class="tit">터닝메카트 고!범퍼카</span>
+                      <span class="txt">
+                        터닝메카드 서울랜드 출동!!<br>어린이 전용 범퍼카
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">캐릭터 타운</span>
+                    <span class="txt_wrap">
+                      <span class="tit">터닝메카드 레이싱</span>
+                      <span class="txt">
+                        하늘을 나는<br>터닝메카드 레이싱을 즐겨보세요!
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">캐릭터 타운</span>
+                    <span class="info">
+                      <span class="kids">키즈</span>
+                      <span class="cancel">윤휴중</span>
+                    </span>
+                    <span class="txt_wrap">
+                      <span class="tit">구름빵</span>
+                      <span class="txt">
+                        "홍비" "홍시" 를 타고<br>하늘을 두둥실~  떠올라보아요.
+                      </span>
+                    </span>
+                  </a>
+                </li>
+
+                <li class="first_list">
+                  <a href="#">
+                    <span class="locate">캐릭터 타운</span>
+                    <span class="txt_wrap">
+                      <span class="tit">깜부비행기</span>
+                      <span class="txt">
+                        깜부와 함께<br>하늘로 훨훨~ 날아 보아요.
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">캐릭터 타운</span>
+                    <span class="txt_wrap">
+                      <span class="tit">알포스윙</span>
+                      <span class="txt">
+                        로봇 알포에게 몸을 맡기고<br>빙글빙글~
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">캐릭터 타운</span>
+                    <span class="txt_wrap">
+                      <span class="tit">카트라이더범퍼</span>
+                      <span class="txt">
+                        좌충우돌~ 짜릿짜릿~<br>나는야 최고의 드라이버~!
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">캐릭터 타운</span>
+                    <span class="info">
+                      <span class="kids">키즈</span>
+                      <span class="cancel">윤휴중</span>
+                    </span>
+                    <span class="txt_wrap">
+                      <span class="tit">브루미즈 동산</span>
+                      <span class="txt">
+                        인기 캐릭터를 테마로~<br>뛰어놀 수 있는 어린이 전용 놀이터!
+                      </span>
+                    </span>
+                  </a>
+                </li>
+
+                <li class="first_list">
+                  <a href="#">
+                    <span class="locate">캐릭터 타운</span>
+                    <span class="txt_wrap">
+                      <span class="tit">라바 트위스터</span>
+                      <span class="txt">
+                        라바를 타고<br>시원한 바람을 즐기세요~
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">캐릭터 타운</span>
+                    <span class="txt_wrap">
+                      <span class="tit">캐니멀서커스</span>
+                      <span class="txt">
+                        동글동글 캐니멀과 함께<br>360도 회전!
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">캐릭터 타운</span>
+                    <span class="txt_wrap">
+                      <span class="tit">뭉게공항 액션존</span>
+                      <span class="txt">
+                        공놀이방, 뭉게바운스, 뭉게미로!<br>신나는 어린이 놀이터
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">캐릭터 타운</span>
+                    <span class="txt_wrap">
+                      <span class="tit">또봇 트레인</span>
+                      <span class="txt">
+                        기차로 태어난 또봇 에볼루션 Y!<br>실제 사이즈의 또봇 에볼루션 X!
+                      </span>
+                    </span>
+                  </a>
+                </li>
+
+                <li class="first_list">
+                  <a href="#">
+                    <span class="locate">미래의 나라</span>
+                    <span class="txt_wrap">
+                      <span class="tit">출동! 슈퍼윙스</span>
+                      <span class="txt">
+                        “출동! 슈퍼윙스”와 함께<br>전 세계로 떠나 보아요.
+                      </span>
+                    </span>
+                  </a>
+                </li>
+              </ol>
+            </div><!-- tabCon1 -->
+            <div id="tab_con2" class="tab_con">
+              <ol class="attract_list">
+                <li class="first_list">
+                  <a href="#">
+                    <span class="locate">세계의 광장</span>
+                    <span class="info">
+                      <span class="kids">키즈</span>
+                      <span class="cancel">윤휴중</span>
+                    </span>
+                    <span class="txt_wrap">
+                      <span class="tit">키즈랜드</span>
+                      <span class="txt">
+                        바다 위 둥둥 떠있는 배를 타고<br>떠나는 신나는 모험!
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">모험의 나라</span>
+                    <span class="info">
+                      <span class="cancel">윤휴중</span>
+                    </span>
+                    <span class="txt_wrap">
+                      <span class="tit">해적소굴</span>
+                      <span class="txt">
+                        깜깜한 해적소굴 속에서<br>숨어있는 과녁을 탕! 탕!
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">모험의 나라</span>
+                    <span class="txt_wrap">
+                      <span class="tit">급류타기</span>
+                      <span class="txt">
+                        통나무배를 타고 급류를 지나<br>9m 높이에서 낙하하는 스릴!
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">캐릭터 타운</span>
+                    <span class="txt_wrap">
+                      <span class="tit">티키톡 열차</span>
+                      <span class="txt">
+                        시속 16km의 어린이와 함께 즐기는<br>롤러 코스터
+                      </span>
+                    </span>
+                  </a>
+                </li>
+
+                <li class="first_list">
+                  <a href="#">
+                    <span class="locate">캐릭터 타운</span>
+                    <span class="txt_wrap">
+                      <span class="tit">터닝메카드 레이싱</span>
+                      <span class="txt">
+                        하늘을 나는<br>터닝메카드 레이싱을 즐겨보세요!
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">캐릭터 타운</span>
+                    <span class="txt_wrap">
+                      <span class="tit">피터팬</span>
+                      <span class="txt">
+                        피터팬과 함께 빙글빙글~<br>동화 속 여행을 함께 떠나보아요.
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">캐릭터 타운</span>
+                    <span class="txt_wrap">
+                      <span class="tit">빅회전목마</span>
+                      <span class="txt">
+                        회전목마를 타고 떠나는<br>환상의 나라 여행
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">캐릭터 타운</span>
+                    <span class="txt_wrap">
+                      <span class="tit">카트라이더범퍼</span>
+                      <span class="txt">
+                        좌충우돌~ 짜릿짜릿~<br>나는야 최고의 드라이버~
+                      </span>
+                    </span>
+                  </a>
+                </li>
+
+                <li class="first_list">
+                  <a href="#">
+                    <span class="locate">캐릭터 타운</span>
+                    <span class="txt_wrap">
+                      <span class="tit">알포스윙</span>
+                      <span class="txt">
+                        로봇 알포에게 몸을 맡기고<br>빙글빙글~
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">캐릭터 타운</span>
+                    <span class="info">
+                      <span class="kids">키즈</span>
+                      <span class="cancel">윤휴중</span>
+                    </span>
+                    <span class="txt_wrap">
+                      <span class="tit">브루미즈 동산</span>
+                      <span class="txt">
+                        인기 캐릭터를 테마로~<br>뛰어놀 수 있는 어린이 전용 놀이터!
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">캐릭터 타운</span>
+                    <span class="txt_wrap">
+                      <span class="tit">라바 트위스터</span>
+                      <span class="txt">
+                        라바를 타고<br>시원한 바람을 즐기세요~
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">캐릭터 타운</span>
+                    <span class="txt_wrap">
+                      <span class="tit">또봇 트레인</span>
+                      <span class="txt">
+                        기차로 태어난 또봇 에볼루션 Y!<br>실제 사이즈의 또봇 에볼루션 X!
+                      </span>
+                    </span>
+                  </a>
+                </li>
+
+                <li class="first_list">
+                  <a href="#">
+                    <span class="locate">미래의 나라</span>
+                    <span class="txt_wrap">
+                      <span class="tit">둥실 비행선</span>
+                      <span class="txt">
+                        비행선을 타고 둥실~ 둥실~<br>바람 따라 구름 따라 여행을 떠나요.
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">미래의 나라</span>
+                    <span class="txt_wrap">
+                      <span class="tit">달나라열차</span>
+                      <span class="txt">
+                        귀여운 동물 모양의 롤러코스터<br>누구에게나 즐거운 달나라 열차~
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">미래의 나라</span>
+                    <span class="info">
+                      <span class="cancel">윤휴중</span>
+                    </span>
+                    <span class="txt_wrap">
+                      <span class="tit">춤추는 요술집</span>
+                      <span class="txt">
+                        흔들흔들~ 아슬아슬~<br>음악에 맞춰 춤을 추는 요술집
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">미래의 나라</span>
+                    <span class="txt_wrap">
+                      <span class="tit">타임머신 5D 360</span>
+                      <span class="txt">
+                        온몸을 관통하는<br>짜릿한 수퍼 5D 입체영상
+                      </span>
+                    </span>
+                  </a>
+                </li>
+
+                <li class="first_list">
+                  <a href="#">
+                    <span class="locate">미래의 나라</span>
+                    <span class="txt_wrap">
+                      <span class="tit">4D 깜짝모험관</span>
+                      <span class="txt">
+                        영상으로 즐기는 3D영상과<br>온몸으로 경험하는 4D의 멀티 효과!
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">미래의 나라</span>
+                    <span class="txt_wrap">
+                      <span class="tit">착각의 집</span>
+                      <span class="txt">
+                        벽이 튀어나오는 초대형 매직아이!<br>착시 현상을 경험해 보세요
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">삼천리 동산</span>
+                    <span class="info">
+                      <span class="kids">키즈</span>
+                    </span>
+                    <span class="txt_wrap">
+                      <span class="tit">베스트 키즈</span>
+                      <span class="txt">
+                        400평 대규모 아이들이<br>마음껏 뛰놀 수 있는 실내놀이 시설
+                      </span>
+                    </span>
+                  </a>
+                </li>
+              </ol>
+            </div><!-- tabCon2 -->
+            <div id="tab_con3" class="tab_con">
+              <ol class="attract_list">
+                <li class="first_list">
+                  <a href="#">
+                    <span class="locate">세계의 광장</span>
+                    <span class="info">
+                      <span class="kids">키즈</span>
+                      <span class="cancel">윤휴중</span>
+                    </span>
+                    <span class="txt_wrap">
+                      <span class="tit">키즈랜드</span>
+                      <span class="txt">
+                        바다 위 둥둥 떠있는 배를 타고<br>떠나는 신나는 모험!
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">캐릭터 타운</span>
+                    <span class="info">
+                      <span class="kids">키즈</span>
+                    </span>
+                    <span class="txt_wrap">
+                      <span class="tit">터닝메카트 고!범퍼카</span>
+                      <span class="txt">
+                        터닝메카드 서울랜드 출동!!<br>어린이 전용 범퍼카
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">캐릭터 타운</span>
+                    <span class="txt_wrap">
+                      <span class="tit">빅회전목마</span>
+                      <span class="txt">
+                        회전목마를 타고 떠나는<br>환상의 나라 여행
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">캐릭터 타운</span>
+                    <span class="info">
+                      <span class="kids">키즈</span>
+                      <span class="cancel">윤휴중</span>
+                    </span>
+                    <span class="txt_wrap">
+                      <span class="tit">구름빵</span>
+                      <span class="txt">
+                        "홍비" "홍시" 를 타고<br>하늘을 두둥실~  떠올라보아요.
+                      </span>
+                    </span>
+                  </a>
+                </li>
+
+                <li class="first_list">
+                  <a href="#">
+                    <span class="locate">캐릭터 타운</span>
+                    <span class="txt_wrap">
+                      <span class="tit">깜부비행기</span>
+                      <span class="txt">
+                        깜부와 함께<br>하늘로 훨훨~ 날아 보아요.
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">캐릭터 타운</span>
+                    <span class="info">
+                      <span class="kids">키즈</span>
+                      <span class="cancel">윤휴중</span>
+                    </span>
+                    <span class="txt_wrap">
+                      <span class="tit">브루미즈 동산</span>
+                      <span class="txt">
+                        인기 캐릭터를 테마로~<br>뛰어놀 수 있는 어린이 전용 놀이터!
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">캐릭터 타운</span>
+                    <span class="txt_wrap">
+                      <span class="tit">뭉게공항 액션존</span>
+                      <span class="txt">
+                        공놀이방, 뭉게바운스, 뭉게미로!<br>신나는 어린이 놀이터
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">캐릭터 타운</span>
+                    <span class="txt_wrap">
+                      <span class="tit">도레미악단</span>
+                      <span class="txt">
+                        악기들을 타고 빙글빙글~<br>악기를 타고 음악여행을 떠나세요.
+                      </span>
+                    </span>
+                  </a>
+                </li>
+
+                <li class="first_list">
+                  <a href="#">
+                    <span class="locate">미래의 나라</span>
+                    <span class="info">
+                      <span class="kids">키즈</span>
+                      <span class="cancel">윤휴중</span>
+                    </span>
+                    <span class="txt_wrap">
+                      <span class="tit">붕붕카</span>
+                      <span class="txt">
+                        멋진 자동차를 타고<br>레일 따라 운전해요~ 붕붕!
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">미래의 나라</span>
+                    <span class="txt_wrap">
+                      <span class="tit">둥실 비행선</span>
+                      <span class="txt">
+                        비행선을 타고 둥실~ 둥실~<br>바람 따라 구름 따라 여행을 떠나요.
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">미래의 나라</span>
+                    <span class="info">
+                      <span class="cancel">윤휴중</span>
+                    </span>
+                    <span class="txt_wrap">
+                      <span class="tit">춤추는 요술집</span>
+                      <span class="txt">
+                        흔들흔들~ 아슬아슬~<br>음악에 맞춰 춤을 추는 요술집
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">미래의 나라</span>
+                    <span class="txt_wrap">
+                      <span class="tit">타임머신 5D 360</span>
+                      <span class="txt">
+                        온몸을 관통하는<br>짜릿한 수퍼 5D 입체영상
+                      </span>
+                    </span>
+                  </a>
+                </li>
+
+                <li class="first_list">
+                  <a href="#">
+                    <span class="locate">미래의 나라</span>
+                    <span class="info">
+                      <span class="kids">키즈</span>
+                    </span>
+                    <span class="txt_wrap">
+                      <span class="tit">개구리만세</span>
+                      <span class="txt">
+                        어린이를 위한 샷드롭!<br>개구리가 하늘 높이 폴짝 폴짝~!
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">미래의 나라</span>
+                    <span class="info">
+                      <span class="kids">키즈</span>
+                    </span>
+                    <span class="txt_wrap">
+                      <span class="tit">미니바이킹</span>
+                      <span class="txt">
+                        배를 타고 앞, 뒤로 움직이는<br>유아용 바이킹!
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">미래의 나라</span>
+                    <span class="txt_wrap">
+                      <span class="tit">4D 깜짝모험관</span>
+                      <span class="txt">
+                        영상으로 즐기는 3D영상과<br>온몸으로 경험하는 4D의 멀티 효과!
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">삼천리 동산</span>
+                    <span class="txt_wrap">
+                      <span class="tit">베스트 키즈</span>
+                      <span class="txt">
+                        400평 대규모 아이들이<br>마음껏 뛰놀 수 있는 실내놀이 시설
+                      </span>
+                    </span>
+                  </a>
+                </li>
+              </ol>
+            </div><!-- tabCon3 -->
+            <div id="tab_con4" class="tab_con">
+              <ol class="attract_list">
+                <li class="first_list">
+                  <a href="#">
+                    <span class="locate">모험의 나라</span>
+                    <span class="txt_wrap">
+                      <span class="tit">킹바이킹</span>
+                      <span class="txt">
+                        거대한 해적선이<br>하늘을 가르며 휘~~잉!
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">모험의 나라</span>
+                    <span class="txt_wrap">
+                      <span class="tit">급류타기</span>
+                      <span class="txt">
+                        통나무배를 타고 급류를 지나<br>9m 높이에서 낙하하는 스릴!
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">캐릭터 타운</span>
+                    <span class="txt_wrap">
+                      <span class="tit">빅회전목마</span>
+                      <span class="txt">
+                        회전목마를 타고 떠나는<br>환상의 나라 여행
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">캐릭터 타운</span>
+                    <span class="txt_wrap">
+                      <span class="tit">카트라이더범퍼</span>
+                      <span class="txt">
+                        좌충우돌~ 짜릿짜릿~<br>나는야 최고의 드라이버~
+                      </span>
+                    </span>
+                  </a>
+                </li>
+
+                <li class="first_list">
+                  <a href="#">
+                    <span class="locate">캐릭터 타운</span>
+                    <span class="txt_wrap">
+                      <span class="tit">라바 트위스터</span>
+                      <span class="txt">
+                        라바를 타고<br>시원한 바람을 즐기세요~
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">미래의 나라</span>
+                    <span class="txt_wrap">
+                      <span class="tit">블랙홀 2000</span>
+                      <span class="txt">
+                        트위스트 2번, 곤두박질 7번~<br>짜릿한 쾌감의 롤러코스터
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">미래의 나라</span>
+                    <span class="txt_wrap">
+                      <span class="tit">록카페</span>
+                      <span class="txt">
+                        의자 전체에 지붕이 씌우어지면<br>뽀뽀타임 쪽~
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">미래의 나라</span>
+                    <span class="txt_wrap">
+                      <span class="tit">은하열차 888</span>
+                      <span class="txt">
+                        360도 연속회전과 아슬아슬 터널을<br>통과하는 스릴 롤러코스터
+                      </span>
+                    </span>
+                  </a>
+                </li>
+
+                <li class="first_list">
+                  <a href="#">
+                    <span class="locate">미래의 나라</span>
+                    <span class="info">
+                      <span class="cancel">윤휴중</span>
+                    </span>
+                    <span class="txt_wrap">
+                      <span class="tit">스카이엑스</span>
+                      <span class="txt">
+                        케이블 하나에 매달려<br>상공 50m 높이에서 낙하!
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">미래의 나라</span>
+                    <span class="txt_wrap">
+                      <span class="tit">타임머신 5D 360</span>
+                      <span class="txt">
+                        온몸을 관통하는<br>짜릿한 수퍼 5D 입체영상
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">삼천리 동산</span>
+                    <span class="txt_wrap">
+                      <span class="tit">도깨비 바람</span>
+                      <span class="txt">
+                        360도 회전하며<br>아찔한 공중 6회전을!
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">삼천리 동산</span>
+                    <span class="txt_wrap">
+                      <span class="tit">귀신동굴</span>
+                      <span class="txt">
+                        지하동굴에서 펼쳐지는<br>으시시~ 등골이 오싹한 공포의 세계
+                      </span>
+                    </span>
+                  </a>
+                </li>
+              </ol>
+            </div><!-- tabCon4 -->
+            <div id="tab_con5" class="tab_con">
+              <ol class="attract_list">
+                <li class="first_list">
+                  <a href="#">
+                    <span class="locate">세계의 광장</span>
+                    <span class="txt_wrap">
+                      <span class="tit">터닝메카드 레이싱</span>
+                      <span class="txt">
+                        하늘을 나는<br>터닝메카드 레이싱을 즐겨보세요!
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">모험의 나라</span>
+                    <span class="txt_wrap">
+                      <span class="tit">킹바이킹</span>
+                      <span class="txt">
+                        거대한 해적선이<br>하늘을 가르며 휘~~잉!
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">모험의 나라</span>
+                    <span class="txt_wrap">
+                      <span class="tit">급류타기</span>
+                      <span class="txt">
+                        통나무배를 타고 급류를 지나<br>9m 높이에서 낙하하는 스릴!
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">캐릭터 타운</span>
+                    <span class="txt_wrap">
+                      <span class="tit">카트라이더범퍼</span>
+                      <span class="txt">
+                        좌충우돌~ 짜릿짜릿~<br>나는야 최고의 드라이버~
+                      </span>
+                    </span>
+                  </a>
+                </li>
+
+                <li class="first_list">
+                  <a href="#">
+                    <span class="locate">캐릭터 타운</span>
+                    <span class="txt_wrap">
+                      <span class="tit">알포스윙</span>
+                      <span class="txt">
+                        로봇 알포에게 몸을 맡기고<br>빙글빙글~
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">캐릭터 타운</span>
+                    <span class="txt_wrap">
+                      <span class="tit">라바 트위스터</span>
+                      <span class="txt">
+                        라바를 타고<br>시원한 바람을 즐기세요~
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">캐릭터 타운</span>
+                    <span class="txt_wrap">
+                      <span class="tit">캐니멀서커스</span>
+                      <span class="txt">
+                        동글동글 캐니멀과 함께<br>360도 회전!
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">캐릭터 타운</span>
+                    <span class="info">
+                      <span class="cancel">윤휴중</span>
+                    </span>
+                    <span class="txt_wrap">
+                      <span class="tit">하이롤러</span>
+                      <span class="txt">
+                        타원형 레일을 따라<br>360도 회전~
+                      </span>
+                    </span>
+                  </a>
+                </li>
+
+                <li class="first_list">
+                  <a href="#">
+                    <span class="locate">미래의 나라</span>
+                    <span class="info">
+                      <span class="cancel">윤휴중</span>
+                    </span>
+                    <span class="txt_wrap">
+                      <span class="tit">월드컵</span>
+                      <span class="txt">
+                        10개의 축구공 모양 접시가<br>하늘로 치솟아 빙글빙글~
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">미래의 나라</span>
+                    <span class="info">
+                      <span class="cancel">윤휴중</span>
+                    </span>
+                    <span class="txt_wrap">
+                      <span class="tit">엑스 플라이어</span>
+                      <span class="txt">
+                        하늘을 나는 두개의 우주선이<br>360도 교차 회전~
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">미래의 나라</span>
+                    <span class="txt_wrap">
+                      <span class="tit">블랙홀 2000</span>
+                      <span class="txt">
+                        트위스트 2번, 곤두박질 7번~<br>짜릿한 쾌감의 롤러코스터
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">미래의 나라</span>
+                    <span class="txt_wrap">
+                      <span class="tit">은하열차 888</span>
+                      <span class="txt">
+                        360도 연속회전과 아슬아슬 터널을<br>통과하는 스릴 롤러코스터
+                      </span>
+                    </span>
+                  </a>
+                </li>
+
+                <li class="first_list">
+                  <a href="#">
+                    <span class="locate">미래의 나라</span>
+                    <span class="info">
+                      <span class="cancel">윤휴중</span>
+                    </span>
+                    <span class="txt_wrap">
+                      <span class="tit">스카이엑스</span>
+                      <span class="txt">
+                        케이블 하나에 매달려<br>상공 50m 높이에서 낙하!
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">미래의 나라</span>
+                    <span class="info">
+                      <span class="cancel">윤휴중</span>
+                    </span>
+                    <span class="txt_wrap">
+                      <span class="tit">샷드롭</span>
+                      <span class="txt">
+                        시속 85km의 무서운 속도로<br>52m 수직 상승!
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">미래의 나라</span>
+                    <span class="txt_wrap">
+                      <span class="tit">4D 깜짝모험관</span>
+                      <span class="txt">
+                        영상으로 즐기는 3D영상과<br>온몸으로 경험하는 4D의 멀티 효과!
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">삼천리 동산</span>
+                    <span class="txt_wrap">
+                      <span class="tit">도깨비 바람</span>
+                      <span class="txt">
+                        360도 회전하며<br>아찔한 공중 6회전을!
+                      </span>
+                    </span>
+                  </a>
+                </li>
+
+                <li class="first_list">
+                  <a href="#">
+                    <span class="locate">삼천리 동산</span>
+                    <span class="txt_wrap">
+                      <span class="tit">귀신동굴</span>
+                      <span class="txt">
+                        지하동굴에서 펼쳐지는<br>으시시~ 등골이 오싹한 공포의 세계
+                      </span>
+                    </span>
+                  </a>
+                </li>
+              </ol>
+            </div><!-- tabCon5 -->
+            <div id="tab_con6" class="tab_con">
+              <ol class="attract_list">
+                <li class="first_list">
+                  <a href="#">
+                    <span class="locate">세계의 광장</span>
+                    <span class="info">
+                      <span class="kids">키즈</span>
+                      <span class="cancel">윤휴중</span>
+                    </span>
+                    <span class="txt_wrap">
+                      <span class="tit">키즈랜드</span>
+                      <span class="txt">
+                        바다 위 둥둥 떠있는 배를 타고<br>떠나는 신나는 모험!
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">모험의 나라</span>
+                    <span class="info">
+                      <span class="cancel">윤휴중</span>
+                    </span>
+                    <span class="txt_wrap">
+                      <span class="tit">해적소굴</span>
+                      <span class="txt">
+                        깜깜한 해적소굴 속에서<br>숨어있는 과녁을 탕! 탕!
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">캐릭터 타운</span>
+                    <span class="info">
+                      <span class="kids">키즈</span>
+                    </span>
+                    <span class="txt_wrap">
+                      <span class="tit">터닝메카트 고!범퍼카</span>
+                      <span class="txt">
+                        터닝메카드 서울랜드 출동!!<br>어린이 전용 범퍼카
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">캐릭터 타운</span>
+                    <span class="txt_wrap">
+                      <span class="tit">빅회전목마</span>
+                      <span class="txt">
+                        회전목마를 타고 떠나는<br>환상의 나라 여행
+                      </span>
+                    </span>
+                  </a>
+                </li>
+
+                <li class="first_list">
+                  <a href="#">
+                    <span class="locate">캐릭터 타운</span>
+                    <span class="txt_wrap">
+                      <span class="tit">뭉게공항 액션존</span>
+                      <span class="txt">
+                        공놀이방, 뭉게바운스, 뭉게미로!<br>신나는 어린이 놀이터
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">캐릭터 타운</span>
+                    <span class="txt_wrap">
+                      <span class="tit">캐니멀서커스</span>
+                      <span class="txt">
+                        동글동글 캐니멀과 함께<br>360도 회전!
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">캐릭터 타운</span>
+                    <span class="txt_wrap">
+                      <span class="tit">도레미악단</span>
+                      <span class="txt">
+                        악기들을 타고 빙글빙글~<br>악기를 타고 음악여행을 떠나세요.
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">캐릭터 타운</span>
+                    <span class="txt_wrap">
+                      <span class="tit">록카페</span>
+                      <span class="txt">
+                        의자 전체에 지붕이 씌우어지면<br>뽀뽀타임 쪽~
+                      </span>
+                    </span>
+                  </a>
+                </li>
+
+                <li class="first_list">
+                  <a href="#">
+                    <span class="locate">미래의 나라</span>
+                    <span class="info">
+                      <span class="cancel">윤휴중</span>
+                    </span>
+                    <span class="txt_wrap">
+                      <span class="tit">춤추는 요술집</span>
+                      <span class="txt">
+                        흔들흔들~ 아슬아슬~<br>음악에 맞춰 춤을 추는 요술집
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">미래의 나라</span>
+                    <span class="txt_wrap">
+                      <span class="tit">타임머신 5D 360</span>
+                      <span class="txt">
+                        온몸을 관통하는<br>짜릿한 수퍼 5D 입체영상
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">미래의 나라</span>
+                    <span class="txt_wrap">
+                      <span class="tit">4D 깜짝모험관</span>
+                      <span class="txt">
+                        영상으로 즐기는 3D영상과<br>온몸으로 경험하는 4D의 멀티 효과!
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">미래의 나라</span>
+                    <span class="txt_wrap">
+                      <span class="tit">착각의 집</span>
+                      <span class="txt">
+                        벽이 튀어나오는 초대형 매직아이!<br>착시 현상을 경험해 보세요
+                      </span>
+                    </span>
+                  </a>
+                </li>
+
+                <li class="first_list">
+                  <a href="#">
+                    <span class="locate">삼천리 동산</span>
+                    <span class="txt_wrap">
+                      <span class="tit">귀신동굴</span>
+                      <span class="txt">
+                        지하동굴에서 펼쳐지는<br>으시시~ 등골이 오싹한 공포의 세계
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="locate">삼천리 동산</span>
+                    <span class="info">
+                      <span class="kids">키즈</span>
+                    </span>
+                    <span class="txt_wrap">
+                      <span class="tit">베스트 키즈</span>
+                      <span class="txt">
+                        400평 대규모 아이들이<br>마음껏 뛰놀 수 있는 실내놀이 시설
+                      </span>
+                    </span>
+                  </a>
+                </li>
+              </ol>
+            </div><!-- tabCon6 -->
+          </div><!-- tab_con_wrap -->
+        </div>
+      </div>
+    </div>
+    <footer id="footer">
+      <div class="fooderTop">
+        <div class="inner">
+          <div class="sns">
+            <ul>
+              <li><a href="#">페이스북 바로가기</a></li>
+              <li><a href="#">트위터 바로가기</a></li>
+              <li><a href="#">인스타그램 바로가기</a></li>
+              <li><a href="#">블로그 바로가기</a></li>
+              <li><a href="#">유튜브 바로가기</a></li>
+            </ul>
+          </div>
+          <div class="familysite">
+            <a href="#" class="btnFamily"><span>패밀리 사이트</span></a>
+            <ul class="familyList">
+              <li><a href="#">캘리포티아피자치킨</a></li>
+              <li><a href="#">로즈힐</a></li>
+            </ul>
+          </div>
+        </div>
+      </div><!-- fooderTop -->
+      <div class="footerBottom">
+        <div class="inner">
+          <div class="link">
+            <a href="#">회사소개</a>
+            <a href="#">인재채용</a>
+            <a href="#">인재채용</a>
+            <a href="#">고객센터</a>
+            <a href="#">제휴문의</a>
+            <a href="#">개인정보처리방침</a>
+            <a href="#">이메일 무단수집거부</a>
+          </div>
+          <div class="infomation">
+            <p>
+            <span>주소 : 13829 경기도 과천시 광명로 181 (주)서울랜드</span>
+            <span>대표이사 : 최형기</span>
+            </p>
+            <p>
+            <span>사업자등록번호 : 138-81-04654</span>
+            <span>통신판매업신고번호 : 과천 제137호</span>
+            <span>안내전화 : 02-509-6000</span>
+            </p>
+            <p>
+            <span>개인정보관리 책임자 : 마케팅1팀 김태형</span>
+            <span>운영자 이메일 : webmaster@seoulland.co.kr</span>
+            <p>
+          </div>
+          <p class="copyright">
+            <span><img src="../../common/images/footer_logo.png" alt="푸터 서울랜드 로고"></span>
+            <span>&copy; copyright 2019 Seouland all rights reserved.</span>
+          </p>
+        </div>
+      </div><!-- fooderBottom -->
+    </footer>
+    <script>
+      $(function(){
+        //bgnb
+        $(".sub_nav .sub_gnb").click(function(e){
+          e.preventDefault();
+          $(this).children(".sub_gnb1").slideToggle();
+        });
+
+        //탭
+        $(".tab_menu li").click(function(e){
+          e.preventDefault();
+          var tc1 = $(this).children().attr("data-tab");
+          var tc2 = "#" + tc1;
+          $(".tab_con").hide();
+          $(tc2).show();
+          $(".tab_menu li").removeClass("on");
+          $(this).addClass("on");
+          console.log(tc1);
+          console. log(tc2);
+        });
+      });
+    </script>
+  </body>
+</html>

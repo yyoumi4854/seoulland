@@ -1,0 +1,111 @@
+@charset "UTF-8";
+@import url(../../common/css/common.css);
+@import url(reset_login.css);
+
+#container .inner{width: 1170px; margin: 0 auto;}
+#container .tit{text-align: center; font-size: 30px; color: #000; margin-top: 65px;}
+#container .txt1{text-align: center; font-weight: 300; line-height: 20px; margin-top: 20px;}
+#container .step{text-align: center; margin-top: 20px;}
+
+#container .step{text-align: center;}
+#container .step ol{display: inline-block;}
+#container .step ol li{display: inline-block; position: relative; margin-left: 200px;}
+#container .step ol li:nth-child(1){margin-left: 0;}
+#container .step ol li p{width: 65px; display: inline-block;}
+#container .step ol li p .ico{display: block; width: 50px; height: 50px; background-color: #ccc; border-radius: 50%; line-height: 50px; font-weight: 500; font-size: 18px; color: #fff; margin: 0 auto;}
+#container .step ol li p .txt{display: block; color: #ccc; padding-top: 6px;}
+#container .step ol li::after{content: ""; display: inline-block; width: 225px; height: 3px; background-color: #ccc; position: absolute; left: 57px; top: 24px; z-index: -1;}
+#container .step ol li:nth-child(4)::after{display: none;}
+
+#container .step ol li.finish p .ico{background: #b016f2 url(../images/ico_check.png) no-repeat center;}
+#container .step ol li.ing p .ico{background-color: #b016f2;}
+#container .step ol li.ing p .txt{color: #b016f2;}
+#container .step ol li.finish::after{background-color: #b016f2;}
+
+#container .txt2{text-align: center; font-size: 20px; line-height: 20px; margin-top: 65px;}
+#container .txt2 span{font-weight: 500; color: #b016f2;}
+
+.btnArea{text-align: right; margin: 65px 0;}
+.btnArea button{width: 320px; line-height: 50px; background-color: #b016f2; border: 0; border-radius: 25px;}
+.btnArea button>a{display: block; font-weight: bold; font-size: 18px; color: #fff; border-radius: 25px;}
+
+/* join01 */
+.method{overflow: hidden; margin-top: 50px;}
+.meth{text-align: center; width: 575px; background-color: #f8f8f8; padding: 50px 0;}
+.meth .method_tit{font-weight: 700; font-size: 20px;}
+.meth .method_tit span{color: #b016f2;}
+.meth>img{margin-top: 20px;}
+.meth>span{display: block; font-size: 16px; line-height: 22px; margin: 20px 0;}
+.meth>a{display: inline-block; width: 320px; height: 50px; background-color: #b016f2; border-radius: 25px; font-weight: 500; font-size: 18px; color: #fff; line-height: 50px;}
+.method .method_phone{float: left;}
+.method .method_email{float: right;}
+
+.attention{margin-top: 20px;}
+.attention span{display: block; font-weight: 300;}
+.attention span+span{margin-top: 5px;}
+
+/* join02 */
+/* .agree{margin-top: 50px;}
+.agree a::before{content: ""; display: inline-block; width: 30px; height: 30px; background: url(../images/ico_agree.png) no-repeat center; vertical-align: middle; margin-right: 10px;}
+.agree span{color: #b016f2;}
+.agree .all{font-weight: 500; font-size: 20px; color: #000;}
+.agree .agree_con{position: relative;}
+.agree .agree_con .agree_tit{display: block; border-bottom: 1px solid #ccc; font-size: 20px; padding: 20px 0;}
+.agree .agree_con .more{position: absolute; right: 0; top: 20px;}
+.agree .agree_con .more::after{content: ""; display: inline-block; width: 10px; height: 7px; background: url(../images/ico_arr_open.png) no-repeat center; vertical-align: middle; margin-left: 10px;}
+.agree .agree_con .agree_txt{height: 300px; background-color: #f8f8f8; padding: 20px; overflow-y: scroll;}
+.agree .agree_con .agree_txt p{font-weight: 300;} */
+
+.agree{margin-top: 50px;}
+.check{display: inline-block; position: relative; height: 30px; cursor: pointer;}
+.check input{display: none;}
+.check .ico{position: absolute; left: 0; top: 0; width:30px; height:30px; background: url("../images/ico_agree.png") no-repeat center;}
+.check .txt{display: inline-block; padding-left: 40px; font-size: 20px; color: #333; line-height: 30px;}
+.check .txt span{color: #b016f2;}
+.check input:checked + .ico{width: 30px; height: 30px; background: url("../images/ico_agree_on.png") no-repeat center;}
+
+.all{padding-bottom: 5px;}
+.all .check .txt{font-weight: 500; color: #000;}
+.agree_tit{position: relative;}
+.agree_tit .agree_con{border-bottom: 1px solid #ccc; font-size: 20px; padding: 20px 0;}
+.agree_tit .more .btn_more{position: absolute; right: 0; top: 24px;}
+.agree_tit .more .btn_more::after{content: ""; display: inline-block; content: ""; display: inline-block; width: 10px; height: 7px; background: url(../images/ico_arr_open.png) no-repeat center; vertical-align: middle; margin-left: 10px;}
+.agree_tit .more .agree_txt{height: 300px; background-color: #f8f8f8; padding: 20px; overflow-y: scroll; font-weight: 300; padding: 20px; display: none;}
+.agree_tit .more.on .agree_txt{display: block;}
+.agree_tit .more.on .btn_more::after{background-image: url(../images/ico_arr_close.png);}
+
+/* join03 */
+#joinForm{}
+#joinForm .info1{margin-top: 50px;}
+#joinForm .info1 legend{font-weight: 700; font-size: 20px; line-height: 20px; padding-left: 10px; color: #000;}
+#joinForm .info1 legend span{color: #b016f2;}
+#joinForm .info1 .tbl{width: 100%; margin-top: 30px;}
+#joinForm .info1 .tbl tr{border-bottom: 1px solid #ccc; line-height: 68px;}
+#joinForm .info1 .tbl tr th{text-align: left; font-size: 20px; color: #b016f2; padding-left: 10px;}
+#joinForm .info1 .tbl tr th span{font-weight: 500; color: #333;}
+#joinForm .info1 .tbl tr td input[type="text"],#joinForm .info1 .tbl tr td input[type=password],#joinForm .info1 .tbl tr td input[type=email]
+{width: 350px; height: 35px; background-color: #f8f8f8; border: 1px solid #ccc; box-sizing: border-box; font-size: 16px; padding-left: 10px; margin-right: 20px;}
+#joinForm .info1 .tbl tr td input[type="email"]{margin: 0; width: 250px;}
+#joinForm .info1 .tbl tr td .btnCheck{display: inline-block; text-align: center; vertical-align: middle; width: 110px; line-height: 40px; background-color: #b016f2; border-radius: 20px; color: #fff; margin: 0 20px 0 -4px;}
+#joinForm .info1 .tbl tr td .selt{width: 250px; height: 35px; background-color: #f8f8f8; border: 1px solid #ccc; box-sizing: border-box; margin-left: 20px;}
+#joinForm .info1 .tbl tr td span{margin-left: -4px;}
+#joinForm .info1 .tbl tr:nth-child(4) td span{padding: 0 15px;}
+
+#joinForm .info2{margin-top: 50px;}
+#joinForm .info2 legend{font-weight: 700; font-size: 20px; line-height: 20px; padding-left: 10px; color: #000;}
+#joinForm .info2 legend span{color: #b016f2;}
+#joinForm .info2 p{padding:10px 0 0 20px;}
+#joinForm .info2 .tbl{width: 100%;}
+#joinForm .info2 .tbl tr{border-bottom: 1px solid #ccc; line-height: 68px;}
+#joinForm .info2 .tbl tr th{text-align: left; font-weight: 500; font-size: 20px; padding-left: 10px;}
+#joinForm .info2 .tbl tr td{font-weight: 500;}
+#joinForm .info2 .tbl tr td input[type="radio"]{}
+#joinForm .info2 .tbl tr td span:nth-child(2){margin-left: 10px;}
+
+/* join04 */
+.congratu{text-align: center; padding: 65px 0;}
+.congratu>p{font-weight: 500; font-size: 30px; margin-top: 50px;}
+.congratu>span{display: block; color: #b016f2; margin-top: 20px;}
+.btn{margin-top: 65px;}
+.btn>a{display: inline-block; width: 320px; height: 50px; background-color: #b016f2; border-radius: 25px; font-weight: 500; font-size: 18px; color: #fff; line-height: 50px;}
+.btn>a+a{background-color: transparent; border: 3px solid #b016f2; box-sizing: border-box; color: #b016f2; margin-left: 20px;}

@@ -1,0 +1,163 @@
+@charset "UTF-8";
+@import url(../../../common/css/common.css);
+@import url(../../../common/css/reset.css);
+
+.tit_bg{width: 100%; height: 360px; background: url(../images/img_enjoy_bg.jpg) no-repeat center; text-align: center;}
+.tit_bg h2{font-size: 48px; line-height: 360px; color: #fff;}
+
+.sub_nav_wrap{width: 100%; height: 50px; background-color: #f8f8f8; box-shadow: 0 4px 10px rgba(153, 153, 153, 0.75); margin-top: -25px;}
+.sub_nav_wrap .sub_nav::after{content: ""; display: block; clear: both;}
+.sub_nav_wrap .sub_nav li{display: inline-block; line-height: 50px; float: left; cursor: pointer;}
+.sub_nav_wrap .sub_nav .home{width: 50px;}
+.sub_nav_wrap .sub_nav .home a{display: block; width: 100%; height: 100%; background: url(../images/ico_sub_home.png) no-repeat center; text-indent: -9999px;}
+.sub_nav_wrap .sub_nav .gnb2{margin-left: -1px;}
+.sub_nav_wrap .sub_nav .sub_gnb{width: 150px; border-left: 1px solid #e1e1e1; border-right: 1px solid #e1e1e1; padding: 0 10px; box-sizing: border-box; position: relative;}
+.sub_nav_wrap .sub_nav .sub_gnb::after{content: ""; display: inline-block; width: 12px; height: 50px; background: url(../images/ico_sub_arrow.png) no-repeat center; float: right;}
+
+.sub_gnb .sub_gnb1{position: absolute; left: -1px; top: 50px; width: 100%; background-color: #fff; border: 1px solid #e1e1e1; display: none;}
+.sub_gnb .sub_gnb1 li{width: 100%; line-height: 50px; padding: 0 10px; box-sizing: border-box;}
+
+.sub_contents{padding: 100px 0; text-align: center;}
+.sub_contents h3{font-size: 40px; line-height: 40px; color: #000; position: relative;}
+.sub_contents h3::after{content: ""; display: block; width: 35px; height: 4px; background-color: #b016f2; position: absolute; left: 50%; top: 60px; transform: translateX(-50%);}
+
+.inner{width: 1170px; margin: 0 auto;}
+.tab_menu{margin-top: 80px;}
+.tab_menu li{display: inline-block; width: 180px; height: 180px; border-radius: 50%; margin-left: 14px;}
+.tab_menu li:nth-child(1){margin-left: 0;}
+.tab_menu li a{display: inline-block; width: 100%; height: 100%; border-radius: 50%; padding: 25px 0; box-sizing: border-box; transition: all 0.3s}
+.tab_menu li a span{display: block;}
+.tab_menu li a .txt1{font-size: 12px; color: #ccc; line-height: 12px; transition: color 0.3s;}
+.tab_menu li a .txt2{font-weight: 500; font-size: 20px; color: #000; line-height: 20px; margin-top: 5px;}
+.tab_menu li a .ico{display: block; width: 107px; height: 90px; background: url(../images/ico_con2_cours1.png) no-repeat center; padding: 6px 37px 0;}
+.tab_menu li:nth-child(2) a .ico{background-image: url(../images/ico_con2_cours2.png);}
+.tab_menu li:nth-child(3) a .ico{background-image: url(../images/ico_con2_cours3.png);}
+.tab_menu li:nth-child(4) a .ico{background-image: url(../images/ico_con2_cours4.png);}
+.tab_menu li:nth-child(5) a .ico{background-image: url(../images/ico_con2_cours5.png);}
+.tab_menu li:nth-child(6) a .ico{background-image: url(../images/ico_con2_cours6.png);}
+
+
+.tab_menu li:hover a .txt1{font-weight: 500; color: #b016f2;}
+.tab_menu li.on{background-color: #ffd02e;}
+.tab_menu li.on a .txt1{font-weight: 500; color: #f20505;}
+
+.tab_con_wrap{padding-top: 60px;}
+.tab_con_wrap .tab_con .attract_list{overflow: hidden;}
+.tab_con_wrap .tab_con .attract_list li{width: 270px; border: 4px solid #e1e1e1; box-sizing: border-box; overflow: hidden; transition: border 0.3s; float: left; margin-left: 30px;}
+.tab_con_wrap .tab_con .attract_list li+li+li+li+li{margin-top: 30px;}
+.tab_con_wrap .tab_con .attract_list .first_list{margin-left: 0;}
+.tab_con_wrap .tab_con .attract_list li a{display: block; width: 100%; position: relative;}
+.tab_con_wrap .tab_con .attract_list li a .locate{display: block; width: 100px; height: 30px; background-color: rgba(0, 0, 0, 0.6); line-height: 30px; color: #fff; position: absolute; left: 10px; top: 10px;}
+.tab_con_wrap .tab_con .attract_list li a .info{position: absolute; right: 10px; top: 230px;}
+.tab_con_wrap .tab_con .attract_list li a .info span{display: block; width: 50px; height: 30px; background-color: #ffd02e; border-radius: 15px; font-size: 15px; line-height: 30px; color: #fff; float: left;}
+.tab_con_wrap .tab_con .attract_list li a .info .cancel{background-color: #f20505;}
+.tab_con_wrap .tab_con .attract_list li a::before{content: ""; display: block; width: 270px; height: 270px; background: url(../images/img_enjoy_tikitalk.jpg) no-repeat center; position: relative; z-index: -1; transition: transform 0.3s}
+.tab_con_wrap .tab_con .attract_list li a .txt_wrap{display: block; background-color: #fff; padding: 16px 12px; text-align: left;}
+.tab_con_wrap .tab_con .attract_list li a .txt_wrap .tit{display: block; font-weight: 700; font-size: 20px;}
+.tab_con_wrap .tab_con .attract_list li a .txt_wrap .txt{display: block; line-height: 20px; padding-top: 12px;}
+.tab_con_wrap .tab_con .attract_list li:hover{border: 4px solid #b016f2;}
+.tab_con_wrap .tab_con .attract_list li:hover a::before{transform: scale(1.2);}
+
+.tab_con_wrap #tab_con1 .attract_list li:nth-child(2) a::before{background-image: url(../images/img_enjoy_turninggo.jpg);}
+.tab_con_wrap #tab_con1 .attract_list li:nth-child(3) a::before{background-image: url(../images/img_enjoy_turning.jpg);}
+.tab_con_wrap #tab_con1 .attract_list li:nth-child(4) a::before{background-image: url(../images/img_enjoy_cloud.jpg);}
+.tab_con_wrap #tab_con1 .attract_list li:nth-child(5) a::before{background-image: url(../images/img_enjoy_kambu.jpg);}
+.tab_con_wrap #tab_con1 .attract_list li:nth-child(6) a::before{background-image: url(../images/img_enjoy_arpo.jpg);}
+.tab_con_wrap #tab_con1 .attract_list li:nth-child(7) a::before{background-image: url(../images/img_enjoy_kartrider.jpg);}
+.tab_con_wrap #tab_con1 .attract_list li:nth-child(8) a::before{background-image: url(../images/img_enjoy_vroomiz.jpg);}
+.tab_con_wrap #tab_con1 .attract_list li:nth-child(9) a::before{background-image: url(../images/img_enjoy_larva.jpg);}
+.tab_con_wrap #tab_con1 .attract_list li:nth-child(10) a::before{background-image: url(../images/img_enjoy_canimals.jpg);}
+.tab_con_wrap #tab_con1 .attract_list li:nth-child(11) a::before{background-image: url(../images/img_enjoy_airport.jpg);}
+.tab_con_wrap #tab_con1 .attract_list li:nth-child(12) a::before{background-image: url(../images/img_enjoy_tobot.jpg);}
+.tab_con_wrap #tab_con1 .attract_list li:nth-child(13) a::before{background-image: url(../images/img_enjoy_superwincs.jpg);}
+
+#tab_con2{display: none;}
+.tab_con_wrap #tab_con2 .attract_list li:nth-child(1) a::before{background-image: url(../images/img_enjoy_kidsland.jpg);}
+.tab_con_wrap #tab_con2 .attract_list li:nth-child(2) a::before{background-image: url(../images/img_enjoy_pirate.jpg);}
+.tab_con_wrap #tab_con2 .attract_list li:nth-child(3) a::before{background-image: url(../images/img_enjoy_torrent.jpg);}
+.tab_con_wrap #tab_con2 .attract_list li:nth-child(4) a::before{background-image: url(../images/img_enjoy_tikitalk.jpg);}
+.tab_con_wrap #tab_con2 .attract_list li:nth-child(5) a::before{background-image: url(../images/img_enjoy_turning.jpg);}
+.tab_con_wrap #tab_con2 .attract_list li:nth-child(6) a::before{background-image: url(../images/img_enjoy_peterpan.jpg);}
+.tab_con_wrap #tab_con2 .attract_list li:nth-child(7) a::before{background-image: url(../images/img_enjoy_carousel.jpg);}
+.tab_con_wrap #tab_con2 .attract_list li:nth-child(8) a::before{background-image: url(../images/img_enjoy_kartrider.jpg);}
+.tab_con_wrap #tab_con2 .attract_list li:nth-child(9) a::before{background-image: url(../images/img_enjoy_arpo.jpg);}
+.tab_con_wrap #tab_con2 .attract_list li:nth-child(10) a::before{background-image: url(../images/img_enjoy_vroomiz.jpg);}
+.tab_con_wrap #tab_con2 .attract_list li:nth-child(11) a::before{background-image: url(../images/img_enjoy_larva.jpg);}
+.tab_con_wrap #tab_con2 .attract_list li:nth-child(12) a::before{background-image: url(../images/img_enjoy_tobot.jpg);}
+.tab_con_wrap #tab_con2 .attract_list li:nth-child(13) a::before{background-image: url(../images/img_enjoy_airship.jpg);}
+.tab_con_wrap #tab_con2 .attract_list li:nth-child(14) a::before{background-image: url(../images/img_enjoy_moon.jpg);}
+.tab_con_wrap #tab_con2 .attract_list li:nth-child(15) a::before{background-image: url(../images/img_enjoy_magichouse.jpg);}
+.tab_con_wrap #tab_con2 .attract_list li:nth-child(16) a::before{background-image: url(../images/img_enjoy_5d.jpg);}
+.tab_con_wrap #tab_con2 .attract_list li:nth-child(17) a::before{background-image: url(../images/img_enjoy_4d.jpg);}
+.tab_con_wrap #tab_con2 .attract_list li:nth-child(18) a::before{background-image: url(../images/img_enjoy_mistaken.jpg);}
+.tab_con_wrap #tab_con2 .attract_list li:nth-child(19) a::before{background-image: url(../images/img_enjoy_bestkids.jpg);}
+
+#tab_con3{display: none;}
+.tab_con_wrap #tab_con3 .attract_list li:nth-child(1) a::before{background-image: url(../images/img_enjoy_kidsland.jpg);}
+.tab_con_wrap #tab_con3 .attract_list li:nth-child(2) a::before{background-image: url(../images/img_enjoy_turninggo.jpg);}
+.tab_con_wrap #tab_con3 .attract_list li:nth-child(3) a::before{background-image: url(../images/img_enjoy_carousel.jpg);}
+.tab_con_wrap #tab_con3 .attract_list li:nth-child(4) a::before{background-image: url(../images/img_enjoy_cloud.jpg);}
+.tab_con_wrap #tab_con3 .attract_list li:nth-child(5) a::before{background-image: url(../images/img_enjoy_kambu.jpg);}
+.tab_con_wrap #tab_con3 .attract_list li:nth-child(6) a::before{background-image: url(../images/img_enjoy_vroomiz.jpg);}
+.tab_con_wrap #tab_con3 .attract_list li:nth-child(7) a::before{background-image: url(../images/img_enjoy_airport.jpg);}
+.tab_con_wrap #tab_con3 .attract_list li:nth-child(8) a::before{background-image: url(../images/img_enjoy_doremi.jpg);}
+.tab_con_wrap #tab_con3 .attract_list li:nth-child(9) a::before{background-image: url(../images/img_enjoy_bungcar.jpg);}
+.tab_con_wrap #tab_con3 .attract_list li:nth-child(10) a::before{background-image: url(../images/img_enjoy_airship.jpg);}
+.tab_con_wrap #tab_con3 .attract_list li:nth-child(11) a::before{background-image: url(../images/img_enjoy_magichouse.jpg);}
+.tab_con_wrap #tab_con3 .attract_list li:nth-child(12) a::before{background-image: url(../images/img_enjoy_5d.jpg);}
+.tab_con_wrap #tab_con3 .attract_list li:nth-child(13) a::before{background-image: url(../images/img_enjoy_frog.jpg);}
+.tab_con_wrap #tab_con3 .attract_list li:nth-child(14) a::before{background-image: url(../images/img_enjoy_mini.jpg);}
+.tab_con_wrap #tab_con3 .attract_list li:nth-child(15) a::before{background-image: url(../images/img_enjoy_4d.jpg);}
+.tab_con_wrap #tab_con3 .attract_list li:nth-child(16) a::before{background-image: url(../images/img_enjoy_bestkids.jpg);}
+
+#tab_con4{display: none;}
+.tab_con_wrap #tab_con4 .attract_list li:nth-child(1) a::before{background-image: url(../images/img_enjoy_king.jpg);}
+.tab_con_wrap #tab_con4 .attract_list li:nth-child(2) a::before{background-image: url(../images/img_enjoy_torrent.jpg);}
+.tab_con_wrap #tab_con4 .attract_list li:nth-child(3) a::before{background-image: url(../images/img_enjoy_carousel.jpg);}
+.tab_con_wrap #tab_con4 .attract_list li:nth-child(4) a::before{background-image: url(../images/img_enjoy_kartrider.jpg);}
+.tab_con_wrap #tab_con4 .attract_list li:nth-child(5) a::before{background-image: url(../images/img_enjoy_larva.jpg);}
+.tab_con_wrap #tab_con4 .attract_list li:nth-child(6) a::before{background-image: url(../images/img_enjoy_black.jpg);}
+.tab_con_wrap #tab_con4 .attract_list li:nth-child(7) a::before{background-image: url(../images/img_enjoy_cafe.jpg);}
+.tab_con_wrap #tab_con4 .attract_list li:nth-child(8) a::before{background-image: url(../images/img_enjoy_888.jpg);}
+.tab_con_wrap #tab_con4 .attract_list li:nth-child(9) a::before{background-image: url(../images/img_enjoy_sky.jpg);}
+.tab_con_wrap #tab_con4 .attract_list li:nth-child(10) a::before{background-image: url(../images/img_enjoy_5d.jpg);}
+.tab_con_wrap #tab_con4 .attract_list li:nth-child(11) a::before{background-image: url(../images/img_enjoy_wind.jpg);}
+.tab_con_wrap #tab_con4 .attract_list li:nth-child(12) a::before{background-image: url(../images/img_enjoy_ghost.jpg);}
+
+#tab_con5{display: none;}
+.tab_con_wrap #tab_con5 .attract_list li:nth-child(1) a::before{background-image: url(../images/img_enjoy_turning.jpg);}
+.tab_con_wrap #tab_con5 .attract_list li:nth-child(2) a::before{background-image: url(../images/img_enjoy_king.jpg);}
+.tab_con_wrap #tab_con5 .attract_list li:nth-child(3) a::before{background-image: url(../images/img_enjoy_torrent.jpg);}
+.tab_con_wrap #tab_con5 .attract_list li:nth-child(4) a::before{background-image: url(../images/img_enjoy_kartrider.jpg);}
+.tab_con_wrap #tab_con5 .attract_list li:nth-child(5) a::before{background-image: url(../images/img_enjoy_arpo.jpg);}
+.tab_con_wrap #tab_con5 .attract_list li:nth-child(6) a::before{background-image: url(../images/img_enjoy_larva.jpg);}
+.tab_con_wrap #tab_con5 .attract_list li:nth-child(7) a::before{background-image: url(../images/img_enjoy_canimals.jpg);}
+.tab_con_wrap #tab_con5 .attract_list li:nth-child(8) a::before{background-image: url(../images/img_enjoy_hi.jpg);}
+.tab_con_wrap #tab_con5 .attract_list li:nth-child(9) a::before{background-image: url(../images/img_enjoy_world-.jpg);}
+.tab_con_wrap #tab_con5 .attract_list li:nth-child(10) a::before{background-image: url(../images/img_enjoy_x.jpg);}
+.tab_con_wrap #tab_con5 .attract_list li:nth-child(11) a::before{background-image: url(../images/img_enjoy_black.jpg);}
+.tab_con_wrap #tab_con5 .attract_list li:nth-child(12) a::before{background-image: url(../images/img_enjoy_888.jpg);}
+.tab_con_wrap #tab_con5 .attract_list li:nth-child(13) a::before{background-image: url(../images/img_enjoy_sky.jpg);}
+.tab_con_wrap #tab_con5 .attract_list li:nth-child(14) a::before{background-image: url(../images/img_enjoy_shot.jpg);}
+.tab_con_wrap #tab_con5 .attract_list li:nth-child(15) a::before{background-image: url(../images/img_enjoy_5d.jpg);}
+.tab_con_wrap #tab_con5 .attract_list li:nth-child(16) a::before{background-image: url(../images/img_enjoy_wind.jpg);}
+.tab_con_wrap #tab_con5 .attract_list li:nth-child(17) a::before{background-image: url(../images/img_enjoy_ghost.jpg);}
+
+#tab_con6{display: none;}
+.tab_con_wrap #tab_con6 .attract_list li:nth-child(1) a::before{background-image: url(../images/img_enjoy_kidsland.jpg);}
+.tab_con_wrap #tab_con6 .attract_list li:nth-child(2) a::before{background-image: url(../images/img_enjoy_pirate.jpg);}
+.tab_con_wrap #tab_con6 .attract_list li:nth-child(3) a::before{background-image: url(../images/img_enjoy_turninggo.jpg);}
+.tab_con_wrap #tab_con6 .attract_list li:nth-child(4) a::before{background-image: url(../images/img_enjoy_carousel.jpg);}
+
+.tab_con_wrap #tab_con6 .attract_list li:nth-child(5) a::before{background-image: url(../images/img_enjoy_airport.jpg);}
+.tab_con_wrap #tab_con6 .attract_list li:nth-child(6) a::before{background-image: url(../images/img_enjoy_canimals.jpg);}
+.tab_con_wrap #tab_con6 .attract_list li:nth-child(7) a::before{background-image: url(../images/img_enjoy_doremi.jpg);}
+.tab_con_wrap #tab_con6 .attract_list li:nth-child(8) a::before{background-image: url(../images/img_enjoy_cafe.jpg);}
+
+.tab_con_wrap #tab_con6 .attract_list li:nth-child(9) a::before{background-image: url(../images/img_enjoy_magichouse.jpg);}
+.tab_con_wrap #tab_con6 .attract_list li:nth-child(10) a::before{background-image: url(../images/img_enjoy_5d.jpg);}
+.tab_con_wrap #tab_con6 .attract_list li:nth-child(11) a::before{background-image: url(../images/img_enjoy_4d.jpg);}
+.tab_con_wrap #tab_con6 .attract_list li:nth-child(12) a::before{background-image: url(../images/img_enjoy_mistaken.jpg);}
+
+.tab_con_wrap #tab_con6 .attract_list li:nth-child(13) a::before{background-image: url(../images/img_enjoy_ghost.jpg);}
+.tab_con_wrap #tab_con6 .attract_list li:nth-child(14) a::before{background-image: url(../images/img_enjoy_bestkids.jpg);}
